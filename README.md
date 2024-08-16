@@ -5,3 +5,29 @@ the most bad*ss freedoom mod on earth
 made by Saver310
 
 discord: https://discord.gg/wsBdTfru9z
+
+## building on linux
+
+### prerequisites
+
+- deutex
+- a computer (with linux)
+- functioning brain
+- keyboard
+
+### guide
+
+1. clone the repository
+
+```
+git clone https://github.com/freedoom-badass-edition/freedoom-badass-edition
+```
+
+2. run the script
+
+```
+cd freedoom-badass-edition
+./build.sh
+```
+3. open `freedoom_badass_edition.wad` in your favorite zdoom-based sourceport
+4. enjoy
