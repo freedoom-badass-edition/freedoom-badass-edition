@@ -1,0 +1,900 @@
+ACTOR BadassPlayer : DoomPlayer replaces DoomPlayer
+{
+  Player.StartItem "MarineGrenade"
+  Player.StartItem "SingularBullet"
+  Player.StartItem "Clip", 1
+  Player.StartItem "RocketAmmo", 1  
+  Player.WeaponSlot 1, SawSaw
+  Player.WeaponSlot 2, SingularBullet
+  Player.WeaponSlot 3, DumbassShitFuckDickCockShotgun, DuperShotgun
+  Player.WeaponSlot 4, SmallButPackingChaingun
+  Player.WeaponSlot 5, MarineGrenade, MarineLauncher
+  Player.WeaponSlot 6, RechargablePlasmaRifleModelv1  
+  Player.WeaponSlot 7, BCG9000
+}
+
+ACTOR DumbassShitFuckDickCockShotgun : Shotgun replaces Shotgun
+{
+  Weapon.SelectionOrder 1300
+  Weapon.AmmoUse 1
+  Weapon.AmmoGive 8
+  Weapon.AmmoType "Shell"
+  Inventory.PickupMessage "Got the DSFDC shotgun! Jam galore!"
+  Obituary "%k unjammed %o."
+  Tag "DSFDC Shotgun"
+  States
+  {
+  Ready:
+    SHTG A 1 A_WeaponReady
+    Loop
+  Deselect:
+    SHTG A 1 A_Lower
+    Loop
+  Select:
+    SHTG A 1 A_Raise
+    Loop
+  Fire:
+    SHTG A 3
+	SHTG A 0 A_FireBullets (5.6, 0, 7, 5)
+    SHTG A 0 A_StartSound("DSSGFIRE", CHAN_WEAPON)
+    SHTG A 7 A_GunFlash
+	SHTS A 0 A_Quake(1,4,0,100)
+    SHTS A 0 A_FireBullets(100, 100, 1000, random(1,2), "BulletPuff", FBF_USEAMMO|FBF_NORANDOM)
+	SHTS A 0 A_StartSound("weapons/sshotf", CHAN_WEAPON)
+    SHTS A 0 A_GunFlash	
+	SHTS A 0 A_Recoil(80)
+    SHTS A 1 A_SetPitch(pitch-5)	
+    SHTS AAAB 1 A_SetPitch(pitch+1)	
+	SHTS B 0 A_Quake(1,4,0,100)
+    SHTS B 0 A_FireBullets(50, 50, 500, 1, "BulletPuff", FBF_USEAMMO|FBF_NORANDOM)
+	SHTS B 0 A_StartSound("weapons/sshotf", CHAN_WEAPON)
+    SHTS B 0 A_GunFlash	
+	SHTS B 0 A_Recoil(40)
+    SHTS B 1 A_SetPitch(pitch-5)	
+    SHTS BBCC 1 A_SetPitch(pitch+1)		
+    SHTS C 0 A_FireBullets(10, 10, 100, 1, "BulletPuff", FBF_USEAMMO|FBF_NORANDOM)
+	SHTS C 0 A_StartSound("weapons/sshotf", CHAN_WEAPON)
+    SHTS C 0 A_GunFlash		
+    SHTS C 4 A_SetPitch(0)
+    SHTS ABCABCDEF 4	
+    SHTG B 3 A_StartSound("DSCOCKA", CHAN_WEAPON)	
+    SHTG C 3 		
+    SHTG D 10 A_StartSound("DSCOCKB", CHAN_WEAPON)
+    SHTG CB 3	
+    SHTG A 7 A_ReFire
+    Goto Ready
+  Flash:
+    SHTF A 4 Bright A_Light1
+    SHTF B 3 Bright A_Light2
+    Goto LightDone
+  Spawn:
+    SHOT A -1
+    Stop
+  }
+}
+
+ACTOR SmallButPackingChaingun : Chaingun replaces Chaingun
+{
+   Weapon.BobRangeX 0.75
+   Weapon.BobRangeY 0.25
+   Weapon.BobSpeed 0.75  
+   Weapon.KickBack 30000
+   Weapon.SelectionOrder 700
+   Weapon.AmmoUse 50
+   Weapon.AmmoGive 50
+   Weapon.AmmoType "Clip"
+   Inventory.PickupMessage "Got the minigun! Something is off..." // "Got the chaingun"
+   Obituary "%o was deleted from existence by %k." // "%o was mowed down by %k's chaingun."
+   Tag "Overcharged Minigun"
+   States
+   {
+   Ready:
+     CHGG A 1 A_WeaponReady
+     Loop
+   Deselect:
+     CHGG A 1 A_Lower
+     Loop
+   Select:
+     CHGG A 1 A_Raise
+     Loop
+   Fire:
+ 	 CHGG AB 10  
+	 CHGG AB 8
+	 CHGG ABAB 6	 
+	 CHGG ABABABAB 4
+	 CHGG ABABABABABABABAB 2
+	 CHGG ABABABABABABABABABABABABABABABAB 1
+	 CHGG A 0 A_Quake(6,12,0,800)
+     CHGG A 0 A_FireBullets(150, 50, 3000, 100, "BulletPuff", FBF_USEAMMO|FBF_NORANDOM)	 
+	 CHGG A 0 A_Recoil(60000)
+	 CHGG A 0 A_StartSound("weapons/sshotf", CHAN_WEAPON) 
+     CHGG A 4 A_SetPitch(pitch-100)	 
+	 CHGG ABABABABABABABABABABABABABABABAB 1
+	 CHGG ABABABABABABABAB 2 A_SetPitch(pitch+3.125) 
+	 CHGG ABABABAB 4 A_SetPitch(0)
+	 CHGG ABAB 6
+	 CHGG AB 8
+	 CHGG B 0 A_ReFire
+     Goto Ready
+   Flash:
+     CHGF A 2 Bright A_Light1
+     CHGF B 2 Bright A_Light1
+     Goto LightDone
+   Spawn:
+     MGUN A -1
+     Stop
+   }
+}
+
+ACTOR SingularBullet : Weapon
+{
+  Weapon.SelectionOrder 3700
+  Weapon.Kickback 100
+  Weapon.AmmoUse 1
+  Weapon.AmmoGive 1 
+  Weapon.AmmoType "Clip"  
+  Inventory.PickupMessage "Got a singular bullet!"  
+  Obituary "%o got shot up by a fist and a bullet."
+  Tag "Singular Bullet"
+  States
+  {
+  Ready: 
+    PUNG A 1 A_WeaponReady
+    Loop
+  Deselect:
+    PUNG A 1 A_Lower
+    Loop
+  Select:
+    PUNG A 1 A_Raise
+    Loop
+  Fire:
+    BULP HIJABCD 2 
+	BULP E 0 A_StartSound("*fist", CHAN_WEAPON)	
+	BULP E 0 A_StartSound("weapons/pistol", CHAN_WEAPON)
+    BULP E 2 A_FireBullets(0, 0, 1, 20, "BulletPuff", FBF_USEAMMO|FBF_NORANDOM)	 	
+    BULP FG 2
+    PUNG A 2 A_ReFire
+    Goto Ready
+  Spawn:
+    BULL A -1
+    Loop	
+  }
+}
+
+ACTOR DuperShotgun : SuperShotgun replaces SuperShotgun
+{
+  Weapon.SelectionOrder 400
+  Weapon.AmmoUse 6
+  Weapon.AmmoGive 12
+  Weapon.AmmoType "Shell"
+  Inventory.PickupMessage "Got the Duper Shotgun!"
+  Obituary "%o was eviscerated by %k's Duper Shotgun."
+  Tag "Duper Shotgun"
+  States
+  {
+  Ready:
+    SHT2 A 1 A_WeaponReady
+    Loop
+  Deselect:
+    SHT2 A 1 A_Lower
+    Loop
+  Select:
+    SHT2 A 1 A_Raise
+    Loop
+  Fire:
+    SHT2 A 3
+	SHT2 A 0 A_Quake(6,12,0,800)
+    SHT2 A 0 A_FireBullets (12, 7, 40, 80, "BulletPuff")
+    SHT2 A 0 A_PlaySound ("weapons/sshotf", CHAN_WEAPON)
+    SHT2 A 0 A_GunFlash
+	SHT2 A 0 A_Recoil(160)
+    SHT2 A 1 A_SetPitch(pitch-40)	
+    SHT2 AAAAAA 1 A_SetPitch(pitch+6)		
+    SHT2 B 7 A_SetPitch(0)	
+    SHT2 C 7 A_CheckReload
+    SHT2 D 4 A_OpenShotgun2
+    SHT2 E 4
+    SHT2 F 4 A_LoadShotgun2
+    SHT2 DE 4
+    SHT2 F 4 A_LoadShotgun2	
+    SHT2 DE 4	
+    SHT2 F 4 A_LoadShotgun2		
+    SHT2 DE 3	
+    SHT2 F 3 A_LoadShotgun2	
+    SHT2 DE 3	
+    SHT2 F 3 A_LoadShotgun2	
+    SHT2 DE 3	
+    SHT2 F 3 A_LoadShotgun2		
+    SHT2 G 6
+    SHT2 H 6 A_CloseShotgun2
+    SHT2 A 5 A_ReFire
+    Goto Ready
+    // unused states
+    SHT2 B 7
+    SHT2 A 3
+    Goto Deselect
+  Flash:
+    SHT2 I 4 Bright A_Light1
+    SHT2 J 3 Bright A_Light2
+    Goto LightDone
+  Spawn:
+    SGN2 A -1
+    Stop
+  }
+}
+
+ACTOR Cocaine : Berserk replaces Berserk
+{
+  +COUNTITEM
+  +INVENTORY.ALWAYSPICKUP
+  Inventory.PickupMessage "Cocaine!" // "Berserk!"
+  Inventory.PickupSound "misc/p_pkup"
+  Tag "Cocaine"
+  States
+  {
+  Spawn:
+    PSTR A -1
+    Stop
+  Pickup:
+    TNT1 A 0 A_GiveInventory("CocainePower")
+    TNT1 A 0 HealThing(500, 500)
+    Stop
+  }
+}
+
+ACTOR CocainePower : PowerStrength
+{
+  Powerup.Duration 1
+  Powerup.Color 255, 255, 255, 0.99
+  +INVENTORY.HUBPOWER
+}
+
+ACTOR SawSaw : Chainsaw replaces Chainsaw
+{
+  Weapon.Kickback -100
+  Weapon.SelectionOrder 2200
+  Weapon.UpSound "fuck"
+  Weapon.ReadySound "fuck"
+  Inventory.PickupMessage "Got the SawSaw!"
+  Obituary "%o was grinded up by %k's SawSaw."
+  Tag "SawSaw"
+  +WEAPON.MELEEWEAPON
+  States
+  {
+  Ready:
+    SAWG C 1 A_WeaponReady
+    Loop
+  Deselect:
+    SAWG C 1 A_Lower
+    Loop
+  Select:
+    SAWG C 1 A_Raise
+    Loop
+  Fire:
+    SAWG C 2 A_StartSound("sawfail", CHAN_AUTO, CHANF_OVERLAP)
+	SAWG DCDCDC 2
+	SAWG DCDCD 4
+	SAWG C 2
+    SAWG C 2 A_StartSound("sawfail", CHAN_AUTO, CHANF_OVERLAP)
+	SAWG DCDCDC 2
+	SAWG DCDCD 4
+	SAWG C 2
+    SAWG C 2 A_StartSound("sawfail", CHAN_AUTO, CHANF_OVERLAP)
+	SAWG DCDCDC 2
+	SAWG DCDCD 4
+	SAWG C 2
+    SAWG C 2 A_StartSound("sawfail", CHAN_AUTO, CHANF_OVERLAP)
+	SAWG DCDC 4
+    SAWG B 0 A_StartSound("DSSAWSAW", CHAN_AUTO, CHANF_OVERLAP)
+    SAWG A 1 A_Recoil(-10) 
+    SAWG B 1 A_Saw(silence,silence,100)
+    SAWG A 1 A_Recoil(-10) 
+    SAWG B 1 A_Saw(silence,silence,100)
+    SAWG A 1 A_Recoil(-10) 
+    SAWG B 1 A_Saw(silence,silence,100)
+    SAWG A 1 A_Recoil(-10) 
+    SAWG B 1 A_Saw(silence,silence,100)	
+    SAWG A 1 A_Recoil(-10) 
+    SAWG B 1 A_Saw(silence,silence,100)
+    SAWG A 1 A_Recoil(-10) 
+    SAWG B 1 A_Saw(silence,silence,100)
+    SAWG A 1 A_Recoil(-10) 
+    SAWG B 1 A_Saw(silence,silence,100)
+    SAWG A 1 A_Recoil(-10) 
+    SAWG B 1 A_Saw(silence,silence,100)	
+    SAWG A 1 A_Recoil(-10) 
+    SAWG B 1 A_Saw(silence,silence,100)
+    SAWG A 1 A_Recoil(-10) 
+    SAWG B 1 A_Saw(silence,silence,100)
+    SAWG A 1 A_Recoil(-10) 
+    SAWG B 1 A_Saw(silence,silence,100)
+    SAWG A 1 A_Recoil(-10) 
+    SAWG B 1 A_Saw(silence,silence,100)	
+    SAWG A 1 A_Recoil(-10) 
+    SAWG B 1 A_Saw(silence,silence,100)
+    SAWG A 1 A_Recoil(-10) 
+    SAWG B 1 A_Saw(silence,silence,100)
+    SAWG A 1 A_Recoil(-10) 
+    SAWG B 1 A_Saw(silence,silence,100)
+    SAWG A 1 A_Recoil(-10) 
+    SAWG B 1 A_Saw(silence,silence,100)	
+    SAWG A 1 A_Recoil(-10) 
+    SAWG B 1 A_Saw(silence,silence,100)
+    SAWG A 1 A_Recoil(-10) 
+    SAWG B 1 A_Saw(silence,silence,100)
+    SAWG A 1 A_Recoil(-10) 
+    SAWG B 1 A_Saw(silence,silence,100)
+    SAWG A 1 A_Recoil(-10) 
+    SAWG B 1 A_Saw(silence,silence,100)	
+    SAWG A 1 A_Recoil(-10) 
+    SAWG B 1 A_Saw(silence,silence,100)
+    SAWG A 1 A_Recoil(-10) 
+    SAWG B 1 A_Saw(silence,silence,100)
+    SAWG A 1 A_Recoil(-10) 
+    SAWG B 1 A_Saw(silence,silence,100)
+    SAWG A 1 A_Recoil(-10) 
+    SAWG B 1 A_Saw(silence,silence,100)	
+    SAWG A 1 A_Recoil(-10) 
+    SAWG B 1 A_Saw(silence,silence,100)
+    SAWG A 1 A_Recoil(-10) 
+    SAWG B 1 A_Saw(silence,silence,100)
+    SAWG A 1 A_Recoil(-10) 
+    SAWG B 1 A_Saw(silence,silence,100)
+    SAWG A 1 A_Recoil(-10) 
+    SAWG B 1 A_Saw(silence,silence,100)	
+    SAWG A 1 A_Recoil(-10) 
+    SAWG B 1 A_Saw(silence,silence,100)
+    SAWG A 1 A_Recoil(-10) 
+    SAWG B 1 A_Saw(silence,silence,100)
+    SAWG A 1 A_Recoil(-10) 
+    SAWG B 1 A_Saw(silence,silence,100)
+    SAWG A 1 A_Recoil(-10) 
+    SAWG B 1 A_Saw(silence,silence,100)	
+    SAWG A 1 A_Recoil(-10) 
+    SAWG B 1 A_Saw(silence,silence,100)
+    SAWG A 1 A_Recoil(-10) 
+    SAWG B 1 A_Saw(silence,silence,100)
+    SAWG A 1 A_Recoil(-10) 
+    SAWG B 1 A_Saw(silence,silence,100)
+    SAWG A 1 A_Recoil(-10) 
+    SAWG B 1 A_Saw(silence,silence,100)	
+    SAWG A 1 A_Recoil(-10) 
+    SAWG B 1 A_Saw(silence,silence,100)
+    SAWG A 1 A_Recoil(-10) 
+    SAWG B 1 A_Saw(silence,silence,100)
+    SAWG A 1 A_Recoil(-10) 
+    SAWG B 1 A_Saw(silence,silence,100)
+    SAWG A 1 A_Recoil(-10) 
+    SAWG B 1 A_Saw(silence,silence,100)	
+    SAWG A 1 A_Recoil(-10) 
+    SAWG B 1 A_Saw(silence,silence,100)
+    SAWG A 1 A_Recoil(-10) 
+    SAWG B 1 A_Saw(silence,silence,100)
+    SAWG A 1 A_Recoil(-10) 
+    SAWG B 1 A_Saw(silence,silence,100)
+    SAWG A 1 A_Recoil(-10) 
+    SAWG B 1 A_Saw(silence,silence,100)	
+    SAWG A 1 A_Recoil(-10) 
+    SAWG B 1 A_Saw(silence,silence,100)
+    SAWG A 1 A_Recoil(-10) 
+    SAWG B 1 A_Saw(silence,silence,100)
+    SAWG A 1 A_Recoil(-10) 
+    SAWG B 1 A_Saw(silence,silence,100)
+    SAWG A 1 A_Recoil(-10) 
+    SAWG B 1 A_Saw(silence,silence,100)	
+    SAWG A 1 A_Recoil(-10) 
+    SAWG B 1 A_Saw(silence,silence,100)
+    SAWG A 1 A_Recoil(-10) 
+    SAWG B 1 A_Saw(silence,silence,100)
+    SAWG A 1 A_Recoil(-10) 
+    SAWG B 1 A_Saw(silence,silence,100)
+    SAWG A 1 A_Recoil(-10) 
+    SAWG B 1 A_Saw(silence,silence,100)	
+    SAWG A 1 A_Recoil(-10) 
+    SAWG B 1 A_Saw(silence,silence,100)
+    SAWG A 1 A_Recoil(-10) 
+    SAWG B 1 A_Saw(silence,silence,100)
+    SAWG A 1 A_Recoil(-10) 
+    SAWG B 1 A_Saw(silence,silence,100)
+    SAWG A 1 A_Recoil(-10) 
+    SAWG B 1 A_Saw(silence,silence,100)	
+    SAWG A 1 A_Recoil(-10) 
+    SAWG B 1 A_Saw(silence,silence,100)
+    SAWG A 1 A_Recoil(-10) 
+    SAWG B 1 A_Saw(silence,silence,100)
+    SAWG A 1 A_Recoil(-10) 
+    SAWG B 1 A_Saw(silence,silence,100)
+    SAWG A 1 A_Recoil(-10) 
+    SAWG B 1 A_Saw(silence,silence,100)	
+    SAWG A 1 A_Recoil(-10) 
+    SAWG B 1 A_Saw(silence,silence,100)
+    SAWG A 1 A_Recoil(-10) 
+    SAWG B 1 A_Saw(silence,silence,100)
+    SAWG A 1 A_Recoil(-10) 
+    SAWG B 1 A_Saw(silence,silence,100)
+    SAWG A 1 A_Recoil(-10) 
+    SAWG B 1 A_Saw(silence,silence,100)	
+    SAWG A 1 A_Recoil(-10) 
+    SAWG B 1 A_Saw(silence,silence,100)
+    SAWG A 1 A_Recoil(-10) 
+    SAWG B 1 A_Saw(silence,silence,100)
+    SAWG A 1 A_Recoil(-10) 
+    SAWG B 1 A_Saw(silence,silence,100)
+    SAWG A 1 A_Recoil(-10) 
+    SAWG B 1 A_Saw(silence,silence,100)	
+    SAWG A 1 A_Recoil(-10) 
+    SAWG B 1 A_Saw(silence,silence,100)
+    SAWG A 1 A_Recoil(-10) 
+    SAWG B 1 A_Saw(silence,silence,100)
+    SAWG A 1 A_Recoil(-10) 
+    SAWG B 1 A_Saw(silence,silence,100)
+    SAWG A 1 A_Recoil(-10) 
+    SAWG B 1 A_Saw(silence,silence,100)	
+    SAWG A 1 A_Recoil(-10) 
+    SAWG B 1 A_Saw(silence,silence,100)
+    SAWG A 1 A_Recoil(-10) 
+    SAWG B 1 A_Saw(silence,silence,100)
+    SAWG A 1 A_Recoil(-10) 
+    SAWG B 1 A_Saw(silence,silence,100)
+    SAWG A 1 A_Recoil(-10) 
+    SAWG B 1 A_Saw(silence,silence,100)	
+    SAWG A 1 A_Recoil(-10) 
+    SAWG B 1 A_Saw(silence,silence,100)
+    SAWG A 1 A_Recoil(-10) 
+    SAWG B 1 A_Saw(silence,silence,100)
+    SAWG A 1 A_Recoil(-10) 
+    SAWG B 1 A_Saw(silence,silence,100)
+    SAWG A 1 A_Recoil(-10) 
+    SAWG B 1 A_Saw(silence,silence,100)	
+    SAWG A 1 A_Recoil(-10) 
+    SAWG B 1 A_Saw(silence,silence,100)
+    SAWG A 1 A_Recoil(-10) 
+    SAWG B 1 A_Saw(silence,silence,100)
+    SAWG A 1 A_Recoil(-10) 
+    SAWG B 1 A_Saw(silence,silence,100)
+    SAWG A 1 A_Recoil(-10) 
+    SAWG B 1 A_Saw(silence,silence,100)	
+    SAWG A 1 A_Recoil(-10) 
+    SAWG B 1 A_Saw(silence,silence,100)
+    SAWG A 1 A_Recoil(-10) 
+    SAWG B 1 A_Saw(silence,silence,100)
+    SAWG A 1 A_Recoil(-10) 
+    SAWG B 1 A_Saw(silence,silence,100)
+    SAWG A 1 A_Recoil(-10) 
+    SAWG B 1 A_Saw(silence,silence,100)	
+    SAWG A 1 A_Recoil(-10) 
+    SAWG B 1 A_Saw(silence,silence,100)
+    SAWG A 1 A_Recoil(-10) 
+    SAWG B 1 A_Saw(silence,silence,100)
+    SAWG A 1 A_Recoil(-10) 
+    SAWG B 1 A_Saw(silence,silence,100)
+    SAWG A 1 A_Recoil(-10) 
+    SAWG B 1 A_Saw(silence,silence,100)	
+    SAWG A 1 A_Recoil(-10) 
+    SAWG B 1 A_Saw(silence,silence,100)
+    SAWG A 1 A_Recoil(-10) 
+    SAWG B 1 A_Saw(silence,silence,100)
+    SAWG A 1 A_Recoil(-10) 
+    SAWG B 1 A_Saw(silence,silence,100)
+    SAWG A 1 A_Recoil(-10) 
+    SAWG B 1 A_Saw(silence,silence,100)	
+    SAWG A 1 A_Recoil(-10) 
+    SAWG B 1 A_Saw(silence,silence,100)
+    SAWG A 1 A_Recoil(-10) 
+    SAWG B 1 A_Saw(silence,silence,100)
+    SAWG A 1 A_Recoil(-10) 
+    SAWG B 1 A_Saw(silence,silence,100)
+    SAWG A 1 A_Recoil(-10) 
+    SAWG B 1 A_Saw(silence,silence,100)	
+    SAWG A 1 A_Recoil(-10) 
+    SAWG B 1 A_Saw(silence,silence,100)
+    SAWG A 1 A_Recoil(-10) 
+    SAWG B 1 A_Saw(silence,silence,100)
+    SAWG A 1 A_Recoil(-10) 
+    SAWG B 1 A_Saw(silence,silence,100)
+    SAWG A 1 A_Recoil(-10) 
+    SAWG B 1 A_Saw(silence,silence,100)	
+    SAWG A 1 A_Recoil(-10) 
+    SAWG B 1 A_Saw(silence,silence,100)
+    SAWG A 1 A_Recoil(-10) 
+    SAWG B 1 A_Saw(silence,silence,100)
+    SAWG A 1 A_Recoil(-10) 
+    SAWG B 1 A_Saw(silence,silence,100)
+    SAWG A 1 A_Recoil(-10) 
+    SAWG B 1 A_Saw(silence,silence,100)	
+    SAWG A 1 A_Recoil(-10) 
+    SAWG B 1 A_Saw(silence,silence,100)
+    SAWG A 1 A_Recoil(-10) 
+    SAWG B 1 A_Saw(silence,silence,100)
+    SAWG A 1 A_Recoil(-10) 
+    SAWG B 1 A_Saw(silence,silence,100)
+    SAWG A 1 A_Recoil(-10) 
+    SAWG B 1 A_Saw(silence,silence,100)	
+    SAWG A 1 A_Recoil(-10) 
+    SAWG B 1 A_Saw(silence,silence,100)
+    SAWG A 1 A_Recoil(-10) 
+    SAWG B 1 A_Saw(silence,silence,100)
+    SAWG A 1 A_Recoil(-10) 
+    SAWG B 1 A_Saw(silence,silence,100)
+    SAWG A 1 A_Recoil(-10) 
+    SAWG B 1 A_Saw(silence,silence,100)	
+    SAWG A 1 A_Recoil(-10) 
+    SAWG B 1 A_Saw(silence,silence,100)
+    SAWG A 1 A_Recoil(-10) 
+    SAWG B 1 A_Saw(silence,silence,100)
+    SAWG A 1 A_Recoil(-10) 
+    SAWG B 1 A_Saw(silence,silence,100)
+    SAWG A 1 A_Recoil(-10) 
+    SAWG B 1 A_Saw(silence,silence,100)	
+    SAWG A 1 A_Recoil(-10) 
+    SAWG B 1 A_Saw(silence,silence,100)
+    SAWG A 1 A_Recoil(-10) 
+    SAWG B 1 A_Saw(silence,silence,100)
+    SAWG A 1 A_Recoil(-10) 
+    SAWG B 1 A_Saw(silence,silence,100)	
+    SAWG A 0 A_ReFire
+    Goto Ready
+  Spawn:
+    CSAW A -1
+    Stop
+  }
+}
+
+ACTOR Fucket : Rocket replaces Rocket
+{
+  -ROCKETTRAIL
+  Speed 20
+  Damage 10
+  Obituary "%o rode %k's corpse."
+  DeathSound "*fist"  
+  States
+  {
+  Spawn:
+    DEBI L 1 Bright
+    Loop
+  Death:
+    MISL B 0 Bright A_Scream
+    MISL B 0 Bright A_SpawnItemEx("FuckedMarine")  	
+    Stop
+  }
+}
+
+ACTOR FuckedMarine : GibbedMarine replaces GibbedMarineExtra
+{
+  +PUSHABLE
+  +SHOOTABLE
+  +NOTAUTOAIMED
+  Health 10
+  DeathSound "misc/gibbed"
+  Tag "Fucked marine"
+  States
+  {
+  Spawn:
+    DEBI L 1000
+    GoTo Death
+  Death:
+    PLAY W 0 A_SpawnItemEx("ThatThingThatGoesBoom")   
+    PLAY W 0 A_Scream 
+    PLAY W -1
+    Stop	
+  }
+}
+
+ACTOR ThatThingThatGoesBoom
+{
+  Radius 11
+  Height 8
+  Speed 20
+  Damage 20
+  Projectile
+  +RANDOMIZE
+  +DEHEXPLOSION
+  +ROCKETTRAIL
+  DeathSound "weapons/rocklx"
+  Obituary "%o got blown up by a corpse." // ""
+  States
+  {
+  Spawn:
+    MISL A 1 Bright
+    GoTo Death
+  Death:
+    MISL B 0 Bright A_Scream
+    MISL B 8 Bright A_Explode
+    MISL C 6 Bright
+    MISL D 4 Bright
+    Stop
+  }
+}
+
+ACTOR BCG9000 : BFG9000 replaces BFG9000
+{
+  Height 20
+  Weapon.SelectionOrder 2800
+  Weapon.AmmoUse 10
+  Weapon.AmmoGive 90
+  Weapon.AmmoType "Cell"
+  +WEAPON.NOAUTOFIRE
+  Inventory.PickupMessage "Got the SBFKAG!"
+  Tag "BCG9000"
+  States
+  {
+  Ready:
+    BFGG A 1 A_WeaponReady
+    Loop
+  Deselect:
+    BFGG A 1 A_Lower
+    Loop
+  Select:
+    BFGG A 1 A_Raise
+    Loop
+  Fire:
+    BFGG A 35 A_BFGSound
+    BFGG B 0 A_Light0
+	BFGG B 0 A_FireShotgun	
+	BFGG B 0 A_FireShotgun2
+	BFGG B 0 A_FireCGun	
+    BFGG B 0 A_FireBFG	
+    BFGG BBBBBBBB 0 A_FireOldBFG	
+    BFGG B 0 A_FireRailgunLeft	
+    BFGG BB 0 A_FireRailgun	
+    BFGG B 0 A_FireRailgunRight		
+    BFGG B 35 A_ReFire
+    Goto Ready
+  Flash:
+    BFGF A 11 Bright A_Light1
+    BFGF B 6 Bright A_Light2
+    Goto LightDone
+  Spawn:
+    BFUG A -1
+    Stop
+  }
+}
+
+ACTOR RechargablePlasmaRifleModelv1 : PlasmaRifle replaces PlasmaRifle
+{
+  Weapon.SelectionOrder 100
+  Weapon.AmmoUse 300
+  Weapon.AmmoGive 300
+  Weapon.AmmoType "Cell"
+  Inventory.PickupMessage "Got the Overcharged Plasma Rifle Model v1!"
+  Tag "Overcharged Plasma Rifle Model v1"
+  States
+  {
+  Ready:
+    PLSG A 1 A_WeaponReady
+    Loop
+  Deselect:
+    PLSG A 1 A_Lower
+    Loop
+  Select:
+    PLSG A 1 A_Raise
+    Loop
+  Fire:
+    PLSG A 4 A_Quake(1,4,0,200)
+    PLSG A 4 A_Quake(2,4,0,250)	
+    PLSG A 3 A_Quake(3,3,0,300)	
+    PLSG A 3 A_Quake(4,3,0,600)	
+    PLSG A 2 A_Quake(5,2,0,800)	
+    PLSG A 8 A_Quake(6,8,0,1000)	
+    PLSG A 8 A_Quake(7,8,0,1200)	
+    PLSG A 35 A_Quake(8,35,0,1600)	
+	PLSG A 0 A_StartSound("Sraka",0,CHANF_DEFAULT,1.0,ATTN_NONE)
+    PLSG A 3 A_FirePlasma
+    PLSG B 20 A_ReFire
+    Goto Ready
+  Flash:
+    PLSF A 4 Bright A_Light1
+    Goto LightDone
+    PLSF B 4 Bright A_Light1
+    Goto LightDone
+  Spawn:
+    PLAS A -1
+    Stop
+  }
+}
+
+ACTOR PlasmaTesticle : PlasmaBall replaces PlasmaBall
+{
+  Radius 13
+  Height 8
+  Speed 10
+  Damage 1
+  Projectile
+  +RANDOMIZE
+  +ZDOOMTRANS
+  +FORCEPAIN
+  RenderStyle Add
+  Alpha 0.75
+  SeeSound "Sraka"
+  DeathSound "*fist"
+  Obituary "%o had his testicles tickled by %k."
+  States
+  {
+  Spawn:
+    PLSS AB 6 Bright
+    Loop
+  Death:
+    PLSE ABCD 8 Bright
+    PLSE E 17 Bright	
+    PLSE D 4 Bright	
+    PLSE C 3 Bright	
+    PLSE B 2 Bright	
+    PLSE A 0 Bright	A_StartSound("weapons/rocklx",0,CHANF_DEFAULT,1.0,ATTN_NONE,0.9)
+    PLSE AAAAAAAAAAAAAAAAAAAAAAAAAAAA 0 Bright A_SpawnItemEx("ThatThingThatGoesBoom",random(-25,25),random(-25,25),random(-25,25),random(-100,100),random(-100,100),random(-100,100))	
+    PLSE AAAAAAAAAAAAAA 0 Bright A_SpawnItemEx("ThatThingThatGoesBoom",random(-12,12),random(-12,12),random(-12,12),random(-50,50),random(-50,50),random(-50,50))
+    PLSE AAAAAAAA 0 Bright A_SpawnItemEx("ThatThingThatGoesBoom",random(-6,6),random(-6,6),random(-6,6),random(-25,25),random(-25,25),random(-25,25))
+    PLSE AAAA 0 Bright A_SpawnItemEx("ThatThingThatGoesBoom",random(-3,3),random(-3,3),random(-3,3),random(-10,10),random(-10,10),random(-10,10))	
+    PLSE AA 0 Bright A_SpawnItemEx("ThatThingThatGoesBoom",random(-1,1),random(-1,1),random(-1,1),random(-5,5),random(-5,5),random(-5,5))	
+    PLSE A 1 Bright	A_SpawnItemEx("PlasmaNuke")	
+    Stop
+  }
+}
+
+ACTOR PlasmaNuke : ThatThingThatGoesBoom
+{
+  Scale 25.0
+  +FOILINVUL
+  +FOILBUDDHA
+  +EXTREMEDEATH
+  +FORCERADIUSDMG
+  +FORCEPAIN
+  Obituary "%o got wiped from existence."
+  States
+  {
+  Spawn:
+    MISL A 1 Bright
+    GoTo Death
+  Death:
+    MISL B 16 Bright A_Explode(100000,100000)
+    MISL C 12 Bright
+    MISL D 8 Bright A_Explode(1,100000)
+    Stop
+  }
+}
+
+ACTOR MarineBox : RocketAmmo replaces RocketBox
+{
+  Inventory.PickupMessage "Picked up a chonk marine."
+  Inventory.Amount 5
+  States
+  {
+  Spawn:
+    PLAY ABCD 6 A_SetScale(1,0.40)
+    Loop
+  }
+}
+
+ACTOR MarineAmmo : RocketAmmo replaces RocketAmmo
+{
+  Scale 0.5
+  Inventory.PickupMessage "Picked up a marine."
+  Inventory.Amount 1
+  Inventory.MaxAmount 50
+  Ammo.BackpackAmount 1
+  Ammo.BackpackMaxAmount 100
+  Inventory.Icon "PLAYA0"
+  States
+  {
+  Spawn:
+    PLAY ABCD 4
+    Loop
+  }
+}
+
+ACTOR MarineLauncher : RocketLauncher replaces RocketLauncher
+{
+  Weapon.SelectionOrder 2500
+  Weapon.AmmoUse 1
+  Weapon.AmmoGive 2
+  Weapon.AmmoType "RocketAmmo"
+  Inventory.PickupMessage "Got the marine launcher!"
+  Tag "Marine Launcher"
+}
+
+ACTOR MarineGrenade : DoomWeapon
+{
+  Weapon.SelectionOrder 2500
+  Weapon.AmmoUse 1
+  Weapon.AmmoGive 1
+  Weapon.AmmoType "RocketAmmo"
+  States
+  {
+  Ready:
+    MNGR A 1 A_WeaponReady
+    Loop
+  Deselect:
+    MNGR A 1 A_Lower
+    Loop
+  Select:
+    MNGR A 1 A_Raise
+    Loop
+  Fire:
+    MNGR ABCDDC 3
+    MNGR E 3 A_FireProjectile("FucketGrenadeGravity")
+    MNGR FGH 2
+	MNGR I 2 A_ReFire
+    Goto Ready
+  }
+}
+
+ACTOR FucketGrenadeGravity : Fucket
+{
+  Speed 20
+  Gravity 0.5
+  BounceType Grenade  
+  BounceCount 5
+  -NOGRAVITY
+  States
+  {
+  Spawn:
+    DEBI L 140
+    GoTo Death
+  Death:
+    PLAY W 0 A_SpawnItemEx("ThatThingThatGoesBoom")   
+    PLAY W 0 A_Scream 
+    PLAY W -1
+    Stop
+  }
+}
+
+ACTOR CorpseTosser : Cyberdemon replaces Cyberdemon
+{
+  Tag "Corpse Tosser"
+  States
+  {
+  Spawn:
+    CYBR AB 10 A_Look
+    Loop
+  See:
+    CYBR A 3 A_Hoof
+    CYBR ABBCC 3 A_Chase
+    CYBR D 3 A_Metal
+    CYBR D 3 A_Chase
+    Loop
+  Missile:
+    CYBR E 6 A_FaceTarget
+    CYBR F 12 A_CyberAttack
+    CYBR E 12 A_FaceTarget
+    CYBR F 12 A_CyberAttack
+    CYBR E 12 A_FaceTarget
+    CYBR F 12 A_CyberAttack
+    Goto See
+  Pain:
+    CYBR G 10 A_Pain
+    Goto See
+  Death:
+    CYBR H 10
+    CYBR I 10 A_Scream
+    CYBR JKL 10
+    CYBR M 10 A_NoBlocking
+    CYBR NO 10
+    CYBR P 30
+    CYBR P -1 A_BossDeath
+    Stop
+  XDeath:
+    CYBG A 4
+    CYBG B 4 A_XScream
+    CYBG C 4 A_NoBlocking
+    CYBG D -1
+    Stop	
+  }
+}
+
+Actor FucketSpawnLocation : PainElemental 26016
+{
+	Tag "Fucket Spawner"
+    States 
+	{
+    Missile:
+		PAIN D 5 A_FaceTarget
+		PAIN E 5 A_FaceTarget
+		PAIN F 5 Bright A_FaceTarget
+		TNT1 A 0 A_PlaySound("Sraka")
+		PAIN F 0 Bright A_CustomMissile("FucketGrenadeGravity", 32, 0, -10)
+		PAIN F 0 Bright A_CustomMissile("FucketGrenadeGravity", 32, 0, -5)
+		PAIN F 0 Bright A_CustomMissile("FucketGrenadeGravity", 32, 0, 0)
+		PAIN F 0 Bright A_CustomMissile("FucketGrenadeGravity", 32, 0, 5)
+		PAIN F 0 Bright A_CustomMissile("FucketGrenadeGravity", 32, 0, 10)
+		Goto See
+    }
+}
