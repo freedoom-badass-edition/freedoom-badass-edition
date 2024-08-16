@@ -28,5 +28,3 @@ git clone https://github.com/freedoom-badass-edition/freedoom-badass-edition
 ```
 freedoom-badass-edition/build.sh
 ```
-3. open `freedoom_badass_edition.wad` in your favorite zdoom-based sourceport
-4. enjoy
