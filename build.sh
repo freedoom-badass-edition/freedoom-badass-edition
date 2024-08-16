@@ -1,0 +1,1 @@
+deutex -rate accept  -doom2 doom2.wad -build wadinfo.txt debil.wad
