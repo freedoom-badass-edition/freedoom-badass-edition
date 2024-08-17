@@ -2,6 +2,8 @@
 
 the most bad*ss freedoom mod on earth
 
+made for zdoom-based sourceports
+
 discord: https://discord.gg/wsBdTfru9z
 
 ## building on linux
