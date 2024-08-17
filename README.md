@@ -28,3 +28,17 @@ git clone https://github.com/freedoom-badass-edition/freedoom-badass-edition
 ```
 freedoom-badass-edition/build.sh
 ```
+
+## building on windows
+
+### prerequisites
+
+- deutex
+- a computer (with windows)
+- keyboard
+
+### guide
+
+1. clone the repository
+2. install deutex in the repository
+3. run the batch file located in the repository
