@@ -2,7 +2,7 @@
 
 the most bad*ss freedoom mod on earth
 
-made by Saver310
+made for zdoom-based sourceports
 
 discord: https://discord.gg/wsBdTfru9z
 
@@ -26,19 +26,12 @@ git clone https://github.com/freedoom-badass-edition/freedoom-badass-edition
 2. run the script
 
 ```
-freedoom-badass-edition/build.sh
-freedoom-badass-edition/build_mappack.sh
+cd freedoom-badass-edition
+./build.sh
+./build_mappack.sh
 ```
 
 ## building on windows
-
-### prerequisites
-
-- deutex
-- a computer (with windows)
-- keyboard
-
-### guide
 
 1. clone the repository
 2. install deutex in the repository
