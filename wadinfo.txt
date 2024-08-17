@@ -21,6 +21,7 @@ DSKYS
 # List of Pictures (with insertion point)
 [graphics]
 TITLEPIC	0	0
+HELP	0	0
 
 # List of Sprites
 [sprites]
