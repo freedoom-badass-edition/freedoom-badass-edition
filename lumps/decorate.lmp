@@ -914,3 +914,5 @@ ACTOR TheNuker : Cyberdemon 26017
     Stop	
   }
 }
+// 26018
+#include "NucFuck"
