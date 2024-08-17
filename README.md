@@ -33,14 +33,6 @@ cd freedoom-badass-edition
 
 ## building on windows
 
-### prerequisites
-
-- deutex
-- a computer (with windows)
-- keyboard
-
-### guide
-
 1. clone the repository
 2. install deutex in the repository
 3. run the batch file (build.bat for the main mod, build_mappack.bat for the mappack) located in the repository
