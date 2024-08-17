@@ -895,7 +895,7 @@ Actor FucketSpawnLocation : PainElemental 26016
     }
 }
 
-ACTOR TheNuker : CorpseTosser
+ACTOR TheNuker : Cyberdemon 26017
 {
   Tag "The Nuker"
   States
@@ -906,5 +906,11 @@ ACTOR TheNuker : CorpseTosser
     CYBR A 8 A_FaceTarget
     CYBR FFF 2 A_SpawnProjectile("PlasmaTesticle")
     Goto See	
+  XDeath:
+    CYBG A 4
+    CYBG B 4 A_XScream
+    CYBG C 4 A_NoBlocking
+    CYBG D -1
+    Stop	
   }
 }
