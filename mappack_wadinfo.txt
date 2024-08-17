@@ -1,0 +1,21 @@
+# DeuTex 5.2.2
+# PWAD creation directives
+
+# List of levels
+[levels]
+MAP01
+MAP02
+MAP03
+MAP04
+MAP05
+
+# List of data Lumps
+[lumps]
+MAPINFO
+DEATHPIC
+
+# List of Musics
+[musics]
+D_MAP01
+
+# End of extraction

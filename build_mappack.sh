@@ -1,0 +1,1 @@
+deutex -doom2 doom2.wad -build mappack_wadinfo.txt freedoom_badass_mappack.wad
