@@ -914,5 +914,16 @@ ACTOR TheNuker : Cyberdemon 26017
     Stop	
   }
 }
-// 26018
-#include "NucFuck"
+
+Actor NuclearFucket : CustomInventory 26018 {
+    Tag "Nuclear Fucket (goes boom)"
+    Inventory.PickupMessage "You stepped on a nuclear fucket."
+    States {
+        Spawn:
+            PLAY ABCD 6 Bright A_SetScale(1,0.40)
+            Loop
+        Pickup:
+            TNT1 A 0 A_PlaySound("Sraka")
+            TNT1 A 0 A_SpawnItem("PlasmaNuke")
+    }
+}

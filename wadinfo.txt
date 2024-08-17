@@ -6,9 +6,6 @@
 DECORATE
 KEYCONF
 SNDINFO
-# Classes start
-NucFuck
-# Classes end
 
 # List of Sounds
 [sounds]
