@@ -1,4 +1,60 @@
-GameInfo
+Map MAP01 "Hydroelectronic Plant"
 {
-   PlayerClasses = "BadassPlayer"
+	LevelNum = 1
+	Next = MAP02
+	SecretNext = MAP02
+	Sky1 = SKY1
+	Par = 15
+	Music = D_MAP01
+	DeathSequence = "Deth"
+}
+
+Map MAP02 "I eat the concrete from the sidewalk"
+{
+	LevelNum = 2
+	Next = MAP03
+	SecretNext = MAP03
+	Sky1 = SKY1
+	Par = 30	
+	Music = D_STALKS
+}
+
+Map MAP03 "Geoff's Epic Maze of Death"
+{
+	LevelNum = 3
+	Next = MAP04
+	SecretNext = MAP04
+	Sky1 = SKY1
+	Par = 45
+	Music = D_COUNTD
+}
+
+Map MAP04 "Geoff's Asshole"
+{
+	LevelNum = 4
+	Next = MAP05
+	SecretNext = MAP05
+	Sky1 = SKY1
+	Par = 15
+	Music = D_BETWEE
+}
+
+Map MAP05 "Duke Nuke 'em"
+{
+	LevelNum = 5
+	Next = MAP06
+	SecretNext = MAP06
+	Sky1 = SKY1
+	Par = 30
+	Music = D_DOOM
+}
+
+
+Intermission Deth
+{
+	TextScreen
+	{
+		Background = "DEATHPIC"
+		Text = "You fucked up"
+	}
 }
