@@ -26,8 +26,9 @@ git clone https://github.com/freedoom-badass-edition/freedoom-badass-edition
 2. run the script
 
 ```
-freedoom-badass-edition/build.sh
-freedoom-badass-edition/build_mappack.sh
+cd freedoom-badass-edition
+./build.sh
+./build_mappack.sh
 ```
 
 ## building on windows
