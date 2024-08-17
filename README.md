@@ -2,8 +2,6 @@
 
 the most bad*ss freedoom mod on earth
 
-made by Saver310
-
 discord: https://discord.gg/wsBdTfru9z
 
 ## building on linux
@@ -27,6 +25,7 @@ git clone https://github.com/freedoom-badass-edition/freedoom-badass-edition
 
 ```
 freedoom-badass-edition/build.sh
+freedoom-badass-edition/build_mappack.sh
 ```
 
 ## building on windows
@@ -41,4 +40,4 @@ freedoom-badass-edition/build.sh
 
 1. clone the repository
 2. install deutex in the repository
-3. run the batch file located in the repository
+3. run the batch file (build.bat for the main mod, build_mappack.bat for the mappack) located in the repository
