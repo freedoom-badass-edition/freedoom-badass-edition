@@ -19,5 +19,6 @@ DEATHPIC
 # List of Musics
 [musics]
 D_MAP01
+D_READ_M
 
 # End of extraction
