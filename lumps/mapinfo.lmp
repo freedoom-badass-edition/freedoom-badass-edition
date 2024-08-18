@@ -49,6 +49,15 @@ Map MAP05 "Dave 3D 'em"
 	Music = D_DOOM
 }
 
+Map MAP06 "I hate this"
+{
+	LevelNum = 6
+	Next = MAP07
+	SecretNext = MAP07
+	Sky1 = SKY1
+	Par = 30
+	Music = D_THE_DA
+}
 
 Intermission Deth
 {
