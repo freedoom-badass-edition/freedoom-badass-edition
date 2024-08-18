@@ -1,6 +1,9 @@
-freedoom_badass_edition.wad
-freedoom_badass_mappack.wad
+freedoom_badass_edition.wad # old
+freedoom_badass_mappack.wad # old
+freedoom_badass_edition (wadinfo)
+freedoom_badass_edition (mappack_wadinfo)
 *.backup1
 *.backup2
 *.backup3
 *.dbs
+Build
