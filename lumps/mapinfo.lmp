@@ -77,6 +77,15 @@ Map MAP09 "Gigantic and nasty, but BAD***SSSSSSSSSSS" {
 	Music = D_IN_CIT
 }
 
+Map MAP10 "The Worshippers of David William" {
+	LevelNum = 10
+	Next = MAP11
+	SecretNext = MAP11
+	Sky1 = FIREWALA
+	Par = 60
+	Music = D_READ_M
+}
+
 Intermission Deth
 {
 	TextScreen
