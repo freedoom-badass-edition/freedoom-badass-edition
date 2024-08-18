@@ -68,6 +68,15 @@ Map MAP07 "Nuclear war or something, idk, but it's bad*ss tho!" {
 	Music = D_SHAWN
 }
 
+Map MAP09 "Gigantic and nasty, but BAD***SSSSSSSSSSS" {
+	LevelNum = 9
+	Next = MAP10
+	SecretNext = MAP10
+	Sky1 = SKY1
+	Par = 420
+	Music = D_IN_CIT
+}
+
 Map MAP10 "The Worshippers of David William" {
 	LevelNum = 10
 	Next = MAP11
