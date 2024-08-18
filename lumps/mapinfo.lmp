@@ -59,6 +59,15 @@ Map MAP06 "I hate this"
 	Music = D_THE_DA
 }
 
+Map MAP07 "Nuclear war or something, idk, but it's bad*ss tho!" {
+	LevelNum = 7
+	Next = MAP08
+	SecretNext = MAP08
+	Sky1 = SKY1
+	Par = 60
+	Music = D_SHAWN
+}
+
 Intermission Deth
 {
 	TextScreen

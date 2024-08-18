@@ -9,6 +9,7 @@ MAP03
 MAP04
 MAP05
 MAP06
+MAP07
 
 # List of data Lumps
 [lumps]
