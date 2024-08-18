@@ -9,6 +9,7 @@ MAP03
 MAP04
 MAP05
 MAP06
+MAP07
 
 # List of data Lumps
 [lumps]
@@ -18,5 +19,6 @@ DEATHPIC
 # List of Musics
 [musics]
 D_MAP01
+D_READ_M
 
 # End of extraction
