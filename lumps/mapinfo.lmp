@@ -49,7 +49,7 @@ Map MAP05 "Dave 3D 'em"
 	Music = D_DOOM
 }
 
-Map MAP06 "I hate this"
+Map MAP06 "Marine Maze"
 {
 	LevelNum = 6
 	Next = MAP07
@@ -59,7 +59,8 @@ Map MAP06 "I hate this"
 	Music = D_THE_DA
 }
 
-Map MAP07 "Nuclear war or something, idk, but it's bad*ss tho!" {
+Map MAP07 "Atomic Attack" 
+{
 	LevelNum = 7
 	Next = MAP08
 	SecretNext = MAP08
@@ -68,16 +69,18 @@ Map MAP07 "Nuclear war or something, idk, but it's bad*ss tho!" {
 	Music = D_SHAWN
 }
 
-Map MAP09 "Gigantic and nasty, but BAD***SSSSSSSSSSS" {
+Map MAP09 "Open World Bad*ssery" 
+{
 	LevelNum = 9
 	Next = MAP10
 	SecretNext = MAP10
 	Sky1 = SKY1
-	Par = 420
+	Par = 35
 	Music = D_IN_CIT
 }
 
-Map MAP10 "The Worshippers of David William" {
+Map MAP10 "The Worshippers of David William"
+{
 	LevelNum = 10
 	Next = MAP11
 	SecretNext = MAP11
