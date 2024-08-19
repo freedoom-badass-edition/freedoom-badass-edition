@@ -69,6 +69,16 @@ Map MAP07 "Atomic Attack"
 	Music = D_SHAWN
 }
 
+Map MAP08 "Shit Attack (Mom said it's my turn on the xbox)" 
+{
+	LevelNum = 8
+	Next = MAP09
+	SecretNext = MAP09
+	Sky1 = SKY1
+	Par = 3
+	Music = D_DDTBLU
+}
+
 Map MAP09 "Open World Bad*ssery" 
 {
 	LevelNum = 9
