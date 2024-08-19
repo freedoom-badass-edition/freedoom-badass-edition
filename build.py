@@ -12,7 +12,7 @@ for Dir in ["graphics", "levels", "lumps", "musics", "sounds", "sprites"]:
             if not f.split(".")[-1] == "mp3":
                 shutil.copy(f, os.path.join("Build", f))
             else:
-                shutil.copy(f, os.path.join("Build", f"{f}.mid")) # gaslighting DeuTex
+                shutil.copy(f, os.path.join("Build", "{}.mid".format(f.split(".")[0]))) # gaslighting DeuTex
 shutil.copy("{}.txt".format(sys.argv[1]), "Build/wadinfo.txt")
 for f in os.listdir("lumps/classes"):
     f = os.path.join("lumps/classes", f)
