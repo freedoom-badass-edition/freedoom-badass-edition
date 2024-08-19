@@ -17,6 +17,7 @@ DSSSTRT2
 DSSAWSAW
 DSSRAKA
 DSKYS
+ZOOMPUNC
 
 # List of Pictures (with insertion point)
 [graphics]
@@ -96,5 +97,9 @@ STFTR10	-3	-2
 STFTR20	-3	-1
 STFTR30	-3	-2
 STFTR40	-4	-2
+ZOOMA0 -200 -100
+ZOOMB0 -170 -70
+ZOOMC0 -150 -50
+ZOOMD0 -100 -10
 
 # End of extraction

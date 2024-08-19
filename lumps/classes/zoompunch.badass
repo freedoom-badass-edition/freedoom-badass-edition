@@ -1,0 +1,15 @@
+Actor ZoomPunch : Fist {
+    Weapon.SlotNumber 1
+    States {
+        Fire:
+            ZOOM A 20 A_PlaySound("ZUMUPANCHI")
+            ZOOM A 4
+            ZOOM B 4
+            ZOOM C 4
+            ZOOM D 4 A_CustomPunch(10, false, 0, "", 200)
+            ZOOM C 4
+            ZOOM B 4
+            ZOOM A 4 A_ReFire
+            goto Ready
+    }
+}
