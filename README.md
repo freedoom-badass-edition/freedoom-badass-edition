@@ -11,6 +11,7 @@ discord: https://discord.gg/wsBdTfru9z
 ### prerequisites
 
 - deutex
+- python
 - a computer (with linux)
 - functioning brain
 - keyboard
@@ -33,6 +34,7 @@ cd freedoom-badass-edition
 
 ## building on windows
 
-1. clone the repository
-2. install deutex in the repository
-3. run the batch file (build.bat for the main mod, build_mappack.bat for the mappack) located in the repository
+1. install python
+2. clone the repository
+3. install deutex in the repository
+4. run the batch file (build.bat for the main mod, build_mappack.bat for the mappack) located in the repository
