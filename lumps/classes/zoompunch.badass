@@ -2,6 +2,7 @@ Actor ZoomPunch : Fist {
     Weapon.SlotNumber 1
     States {
         Fire:
+	    ZOOM A 0 A_JumpIfInventory("CocainePower", 1, "FireCocaine")
             ZOOM A 20 A_PlaySound("ZUMUPANCHI")
             ZOOM A 4
             ZOOM B 4
@@ -10,6 +11,16 @@ Actor ZoomPunch : Fist {
             ZOOM C 4
             ZOOM B 4
             ZOOM A 4 A_ReFire
+            goto Ready
+        FireCocaine:
+            ZOOM A 5 A_PlaySound("ZUMUPANCHI")
+            ZOOM A 2
+            ZOOM B 2
+            ZOOM C 2
+            ZOOM D 2 A_CustomPunch(100, false, 0, "", 300)
+            ZOOM C 2
+            ZOOM B 2
+            ZOOM A 2 A_ReFire
             goto Ready
     }
 }

@@ -109,7 +109,7 @@ ACTOR SmallButPackingChaingun : Chaingun replaces Chaingun
      CHGG A 0 A_FireBullets(150, 50, 3000, 100, "BulletPuff", FBF_USEAMMO|FBF_NORANDOM)	 
 	 CHGG A 0 A_Recoil(60000)
 	 CHGG A 0 A_StartSound("weapons/sshotf", CHAN_WEAPON) 
-     CHGG A 4 A_SetPitch(pitch-100)	 
+     CHGG A 4 A_SetPitch(-50)	 
 	 CHGG ABABABABABABABABABABABABABABABAB 1
 	 CHGG ABABABABABABABAB 2 A_SetPitch(pitch+3.125) 
 	 CHGG ABABABAB 4 A_SetPitch(0)
