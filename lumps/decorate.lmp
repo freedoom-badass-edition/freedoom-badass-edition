@@ -1,5 +1,6 @@
 ACTOR BadassPlayer : DoomPlayer replaces DoomPlayer
 {
+  Player.StartItem "ZoomPunch"
   Player.StartItem "MarineGrenade"
   Player.StartItem "SingularBullet"
   Player.StartItem "Clip", 1
