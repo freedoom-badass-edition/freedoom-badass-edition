@@ -6,6 +6,7 @@ freedoom_badass_edition (mappack_wadinfo)
 # Used
 freedoom_badass_edition (wadinfo).wad
 freedoom_badass_edition (mappack_wadinfo).wad
+*.bak
 *.backup1
 *.backup2
 *.backup3

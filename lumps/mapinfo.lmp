@@ -7,6 +7,7 @@ Map MAP01 "Hydroelectronic Plant"
 	Par = 15
 	Music = D_MAP01
 	DeathSequence = "Deth"
+	Author = Saver310
 }
 
 Map MAP02 "I eat the concrete from the sidewalk"
@@ -17,6 +18,7 @@ Map MAP02 "I eat the concrete from the sidewalk"
 	Sky1 = SKY1
 	Par = 30	
 	Music = D_STALKS
+	Author = Saver310
 }
 
 Map MAP03 "Geoff's Epic Maze of Death"
@@ -27,6 +29,7 @@ Map MAP03 "Geoff's Epic Maze of Death"
 	Sky1 = SKY1
 	Par = 45
 	Music = D_COUNTD
+	Author = Saver310
 }
 
 Map MAP04 "Geoff's Asshole"
@@ -37,6 +40,7 @@ Map MAP04 "Geoff's Asshole"
 	Sky1 = SKY1
 	Par = 15
 	Music = D_BETWEE
+	Author = Saver310
 }
 
 Map MAP05 "Dave 3D 'em"
@@ -47,6 +51,7 @@ Map MAP05 "Dave 3D 'em"
 	Sky1 = SKY1
 	Par = 30
 	Music = D_DOOM
+	Author = Saver310
 }
 
 Map MAP06 "Marine Maze"
@@ -57,6 +62,7 @@ Map MAP06 "Marine Maze"
 	Sky1 = SKY1
 	Par = 30
 	Music = D_THE_DA
+	Author = Saver310
 }
 
 Map MAP07 "Atomic Attack" 
@@ -67,6 +73,7 @@ Map MAP07 "Atomic Attack"
 	Sky1 = SKY1
 	Par = 60
 	Music = D_SHAWN
+	Author = rostuhan
 }
 
 Map MAP08 "Shit Attack (Mom said it's my turn on the xbox)" 
@@ -77,6 +84,7 @@ Map MAP08 "Shit Attack (Mom said it's my turn on the xbox)"
 	Sky1 = SKY1
 	Par = 3
 	Music = D_DDTBLU
+	Author = SmekkyBoy
 }
 
 Map MAP09 "Open World Bad*ssery" 
@@ -87,6 +95,7 @@ Map MAP09 "Open World Bad*ssery"
 	Sky1 = SKY1
 	Par = 35
 	Music = D_IN_CIT
+	Author = blitzdoughnuts
 }
 
 Map MAP10 "The Worshippers of David William"
@@ -97,6 +106,18 @@ Map MAP10 "The Worshippers of David William"
 	Sky1 = FIREWALA
 	Par = 60
 	Music = D_READ_M
+	Author = rostuhan
+}
+
+Map MAP11 "Light at the End of David William's Tunnel"
+{
+	LevelNum = 11
+	Next = MAP12
+	SecretNext = MAP12
+	Sky1 = SKY1
+	Par = 10
+	Music = D_STLKS2
+	Author = Saver310
 }
 
 Intermission Deth
