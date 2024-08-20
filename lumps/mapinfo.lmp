@@ -119,6 +119,16 @@ Map MAP11 "Light at the End of David William's Tunnel"
 	Music = D_STLKS2
 	Author = Saver310
 }
+Map MAP12 "Mission \"Ancient Troll\""
+{
+	LevelNum = 12
+	Next = MAP13
+	SecretNext = MAP13
+	Sky1 = HELP
+	Music = D_READ_M
+	Par = 120
+	Author = rostuhan
+}
 
 Intermission Deth
 {
