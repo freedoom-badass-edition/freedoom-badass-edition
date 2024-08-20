@@ -125,7 +125,7 @@ Map MAP12 "Mission \"Ancient Troll\""
 	Next = MAP13
 	SecretNext = MAP13
 	Sky1 = HELP
-	Misoc = D_READ_M
+	Music = D_READ_M
 	Par = 120
 	Author = rostuhan
 }
