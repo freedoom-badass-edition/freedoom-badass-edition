@@ -10,6 +10,11 @@ freedoom_badass_edition (mappack_wadinfo).wad
 *.backup1
 *.backup2
 *.backup3
+*.autosave1
+*.autosave2
+*.autosave3
+*.autosave4
+*.autosave5
 *.dbs
 Build
 screenshots
