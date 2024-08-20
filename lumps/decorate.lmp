@@ -5,7 +5,7 @@ ACTOR BadassPlayer : DoomPlayer replaces DoomPlayer
   Player.StartItem "SingularBullet"
   Player.StartItem "Clip", 1
   Player.StartItem "RocketAmmo", 1  
-  Player.WeaponSlot 1, SawSaw
+  Player.WeaponSlot 1, ZoomPunch, SawSaw
   Player.WeaponSlot 2, SingularBullet
   Player.WeaponSlot 3, DumbassShitFuckDickCockShotgun, DuperShotgun
   Player.WeaponSlot 4, SmallButPackingChaingun
@@ -766,7 +766,7 @@ ACTOR PlasmaNuke : ThatThingThatGoesBoom
 
 ACTOR MarineBox : RocketAmmo replaces RocketBox
 {
-  Inventory.PickupMessage "Picked up a chonk marine."
+  Inventory.PickupMessage "Picked up a chonk fucket."
   Inventory.Amount 5
   States
   {
@@ -779,7 +779,7 @@ ACTOR MarineBox : RocketAmmo replaces RocketBox
 ACTOR MarineAmmo : RocketAmmo replaces RocketAmmo
 {
   Scale 0.5
-  Inventory.PickupMessage "Picked up a marine."
+  Inventory.PickupMessage "Picked up a fucket."
   Inventory.Amount 1
   Inventory.MaxAmount 50
   Ammo.BackpackAmount 1
@@ -799,8 +799,8 @@ ACTOR MarineLauncher : RocketLauncher replaces RocketLauncher
   Weapon.AmmoUse 1
   Weapon.AmmoGive 2
   Weapon.AmmoType "RocketAmmo"
-  Inventory.PickupMessage "Got the marine launcher!"
-  Tag "Marine Launcher"
+  Inventory.PickupMessage "Got the fucket launcher!"
+  Tag "Fucket Launcher"
 }
 
 ACTOR MarineGrenade : DoomWeapon
