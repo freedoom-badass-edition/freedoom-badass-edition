@@ -9,6 +9,7 @@ SNDINFO
 
 # List of Sounds
 [sounds]
+COCAPUNC
 DSCOCKA
 DSCOCKB
 DSSGFIRE
@@ -99,7 +100,7 @@ STFTR30	-3	-2
 STFTR40	-4	-2
 ZOOMA0 -200 -100
 ZOOMB0 -170 -70
-ZOOMC0 -150 -50
+ZOOMC0 -90 0
 ZOOMD0 -100 -10
 
 # End of extraction
