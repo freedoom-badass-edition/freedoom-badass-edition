@@ -98,7 +98,7 @@ Map MAP09 "Open World Bad*ssery"
 	Author = blitzdoughnuts
 }
 
-Map MAP10 "The Worshippers of David William"
+Map MAP10 "The Servants of David William"
 {
 	LevelNum = 10
 	Next = MAP11
