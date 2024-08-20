@@ -19,7 +19,7 @@ for f in os.listdir("lumps/classes"):
     with open(f, "r") as f:
         with open("Build/lumps/decorate.lmp", "a") as dec:
             dec.write("\n\n" + f.read())
-            dec.close
+            dec.close()
     f.close()
 shutil.copy("IWAD.wad", "Build/doom2.wad")
 os.chdir("Build")
