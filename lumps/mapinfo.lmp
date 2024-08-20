@@ -139,6 +139,17 @@ Map MAP13 "Sailor Moon"
 	Par = 25
 	Author = Saver310
 }
+Map MAP14 "Bad*ss Minesweeper"
+{
+	LevelNum = 14
+	Next = MAP15
+	SecretNext = MAP15
+	Sky1 = SKY2
+	Music = D_EVIL
+	Author = Saver310
+	NoInfighting
+	RandomPlayerStarts
+}
 
 Intermission Deth
 {
