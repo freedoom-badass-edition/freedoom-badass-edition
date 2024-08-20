@@ -129,6 +129,16 @@ Map MAP12 "Mission \"Ancient Troll\""
 	Par = 120
 	Author = rostuhan
 }
+Map MAP13 "Sailor Moon"
+{
+	LevelNum = 13
+	Next = MAP14
+	SecretNext = MAP14
+	Sky1 = SKY2
+	Music = D_DOOM2
+	Par = 25
+	Author = Saver310
+}
 
 Intermission Deth
 {
