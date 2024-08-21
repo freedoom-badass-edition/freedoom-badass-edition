@@ -120,6 +120,15 @@ Map MAP11 "Light at the End of David William's Tunnel"
 	Author = Saver310
 }
 
+Map MAP16 "I drink nukage" {
+	LevelNum = 16
+	Next = MAP12
+	SecretNext = MAP12
+	Sky1 = HELP
+	Par = 500
+	Author = rostuhan
+}
+
 Intermission Deth
 {
 	TextScreen
