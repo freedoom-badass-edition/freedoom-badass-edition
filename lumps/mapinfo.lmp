@@ -161,6 +161,15 @@ Map MAP15 "A Subway Filled With Blood"
 	Author = Saver310
 }
 
+Map MAP16 "I drink nukage" {
+	LevelNum = 16
+	Next = MAP12
+	SecretNext = MAP12
+	Sky1 = HELP
+	Par = 500
+	Author = rostuhan
+}
+
 Intermission Deth
 {
 	TextScreen
