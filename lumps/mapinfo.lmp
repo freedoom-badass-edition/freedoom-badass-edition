@@ -98,7 +98,7 @@ Map MAP09 "Open World Bad*ssery"
 	Author = blitzdoughnuts
 }
 
-Map MAP10 "The Worshippers of David William"
+Map MAP10 "The Servants of David William"
 {
 	LevelNum = 10
 	Next = MAP11
@@ -117,6 +117,47 @@ Map MAP11 "Light at the End of David William's Tunnel"
 	Sky1 = SKY1
 	Par = 10
 	Music = D_STLKS2
+	Author = Saver310
+}
+Map MAP12 "Mission \"Ancient Troll\""
+{
+	LevelNum = 12
+	Next = MAP13
+	SecretNext = MAP13
+	Sky1 = HELP
+	Music = D_READ_M
+	Par = 120
+	Author = rostuhan
+}
+Map MAP13 "Sailor Moon"
+{
+	LevelNum = 13
+	Next = MAP14
+	SecretNext = MAP14
+	Sky1 = SKY2
+	Music = D_DOOM2
+	Par = 25
+	Author = Saver310
+}
+Map MAP14 "Bad*ss Minesweeper"
+{
+	LevelNum = 14
+	Next = MAP15
+	SecretNext = MAP15
+	Sky1 = SKY2
+	Music = D_EVIL
+	Author = Saver310
+	NoInfighting
+	RandomPlayerStarts
+}
+Map MAP15 "A Subway Filled With Blood"
+{
+	LevelNum = 15
+	Next = MAP16
+	SecretNext = MAP16
+	Sky1 = SKY2
+	Music = D_MAP15
+	Par = 70
 	Author = Saver310
 }
 

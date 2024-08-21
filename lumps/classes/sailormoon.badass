@@ -1,0 +1,83 @@
+ACTOR TechnoSpiderDriver : SpiderMastermind 26019
+{
+  Tag "Technospider w/ Tough Sailor"
+  States
+  {
+  Death:
+    SPID J 20 A_Scream
+    SPID K 5 A_NoBlocking
+    SPID K 5 A_SpawnItemEx("DriverSailor")
+    SPID LMNOPQR 10
+    SPID S -1
+    Stop
+  }
+}
+
+ACTOR DriverSailor : WolfensteinSS 26020
+{
+  Health 100
+  Speed 12
+  PainChance 200
+  ReactionTime 2
+  Dropitem "ClipBox"
+  Tag "Tough Sailor"
+  States
+  {
+  Missile:
+    SSWV E 3 A_FaceTarget
+    SSWV F 3 A_FaceTarget
+    SSWV G 1 Bright A_CPosAttack
+    SSWV G 1 Bright A_CPosAttack
+    SSWV F 3 A_FaceTarget
+    SSWV G 1 Bright A_CPosAttack
+    SSWV G 1 Bright A_CPosAttack
+    SSWV F 1 A_CPosRefire
+    Goto Missile+1
+  Pain:
+    SSWV H 1
+    SSWV H 2 A_Pain
+    Goto See
+  Death:
+    SSWV N 0
+    Goto XDeath
+  XDeath:
+    SSWV N 5 
+    SSWV O 2 A_PlaySound("wolfss/death")
+    SSWV O 3 A_XScream
+    SSWV P 5 A_NoBlocking
+    SSWV QRSTU 5
+    SSWV V -1
+    Stop
+  Raise:
+    SSWV VUTSRQPON 2
+    Goto See 
+  }
+}
+
+ACTOR FakeDeathSailor : WolfensteinSS 26021
+{
+  GibHealth 40
+  DropItem ""
+  ReactionTime 2
+  Tag "Fake Death Sailor"
+  States
+  {
+  Death:
+    SSWV I 5
+    SSWV J 5 A_Scream
+    SSWV K 5 A_NoBlocking
+    SSWV L 5
+    SSWV M 30
+    SSWV LKJ 2
+    SSWV I 2 A_SpawnItemEx("FakeDeathSailor")
+   Stop
+  XDeath:
+    SSWV N 5 
+    SSWV O 5 A_XScream
+    SSWV P 0 A_SpawnItemEx("Clip")
+    SSWV P 5 A_NoBlocking
+    SSWV QRSTU 5
+    SSWV V -1
+    Stop
+  }
+}
