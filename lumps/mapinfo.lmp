@@ -163,10 +163,10 @@ Map MAP15 "A Subway Filled With Blood"
 
 Map MAP16 "I drink nukage" {
 	LevelNum = 16
-	Next = MAP12
-	SecretNext = MAP12
+	Next = MAP17
+	SecretNext = MAP17
 	Sky1 = HELP
-	Par = 500
+	Par = 150
 	Author = rostuhan
 }
 
