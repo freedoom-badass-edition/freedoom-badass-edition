@@ -166,6 +166,7 @@ Map MAP16 "I drink nukage" {
 	Next = MAP17
 	SecretNext = MAP17
 	Sky1 = HELP
+	Music = D_DEAD2
 	Par = 150
 	Author = rostuhan
 }
@@ -176,6 +177,7 @@ Map MAP17 "Smekky's Bad*ss City"
 	SecretNext = MAP18
 	Sky1 = SKY2
 	Music = D_SHAWN2
+	Par = 30
 	Author = SmekkyBoy
 }
 
