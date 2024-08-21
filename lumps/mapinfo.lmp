@@ -150,6 +150,16 @@ Map MAP14 "Bad*ss Minesweeper"
 	NoInfighting
 	RandomPlayerStarts
 }
+Map MAP15 "A Subway Filled With Blood"
+{
+	LevelNum = 15
+	Next = MAP16
+	SecretNext = MAP16
+	Sky1 = SKY2
+	Music = D_MAP15
+	Par = 70
+	Author = Saver310
+}
 
 Intermission Deth
 {
