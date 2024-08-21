@@ -150,7 +150,7 @@ Map MAP14 "Bad*ss Minesweeper"
 	NoInfighting
 	RandomPlayerStarts
 }
-Map MAP15 "A Subway Filled With Blood"
+Map MAP15 "Blood Filled Subway"
 {
 	LevelNum = 15
 	Next = MAP16
