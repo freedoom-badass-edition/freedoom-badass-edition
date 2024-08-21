@@ -169,6 +169,15 @@ Map MAP16 "I drink nukage" {
 	Par = 150
 	Author = rostuhan
 }
+Map MAP17 "Smekky's Bad*ss City"
+{
+	LevelNum = 17
+	Next = MAP18
+	SecretNext = MAP18
+	Sky1 = SKY2
+	Music = D_SHAWN2
+	Author = SmekkyBoy
+}
 
 Intermission Deth
 {
