@@ -265,8 +265,8 @@ ACTOR SawSaw : Chainsaw replaces Chainsaw
 {
   Weapon.Kickback -100
   Weapon.SelectionOrder 2200
-  Weapon.UpSound "fuck"
-  Weapon.ReadySound "fuck"
+  Weapon.UpSound "silence"
+  Weapon.ReadySound "silence"
   Inventory.PickupMessage "Got the SawSaw!"
   Obituary "%o was grinded up by %k's SawSaw."
   Tag "SawSaw"
@@ -578,7 +578,7 @@ ACTOR FuckedMarine : GibbedMarine replaces GibbedMarineExtra
   +NOTAUTOAIMED
   Health 10
   DeathSound "misc/gibbed"
-  Tag "Fucked marine"
+  Tag "Fucked fucket"
   States
   {
   Spawn:
@@ -627,7 +627,7 @@ ACTOR BCG9000 : BFG9000 replaces BFG9000
   Weapon.AmmoType "Cell"
   +WEAPON.NOAUTOFIRE
   Inventory.PickupMessage "Got the SBFKAG!"
-  Tag "BCG9000"
+  Tag "SBFKAG"
   States
   {
   Ready:
