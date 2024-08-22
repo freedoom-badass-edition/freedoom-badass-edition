@@ -1,0 +1,22 @@
+ACTOR WorkerZombie : ZombieMan 26022
+{
+  Health 10
+  Speed 10
+  PainChance 200
+  DropItem ""
+  Tag "Worker Zombie"
+  States
+  {
+  Spawn:
+    POSS AEBECEDE 6 A_Look
+    Loop
+  See:
+    POSS AABBCCDD 3 A_Chase("Melee")
+    Loop
+  Melee:
+    POSS B 4
+    POSS E 10 A_CustomMeleeAttack(10,"*fist","skeleton/swing")
+    POSS A 4
+    Goto See
+  }
+}
