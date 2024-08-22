@@ -257,3 +257,7 @@ Skill Nightmare
 	Name = "Erectile Disfunction"
 	MustConfirm
 }
+GameInfo
+{
+   PlayerClasses = "BadassPlayer"
+}
