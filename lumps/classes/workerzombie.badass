@@ -8,7 +8,7 @@ ACTOR WorkerZombie : ZombieMan 26022
   States
   {
   Spawn:
-    POSS ABCDBADADDCACABDACABCD 15 A_Look
+    POSS ABCDBADADBDCACABDACABCD 15 A_Look
     Loop
   See:
     POSS AABBCCDD 3 A_Chase("Melee")
