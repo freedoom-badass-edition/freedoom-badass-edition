@@ -1,0 +1,12 @@
+ACTOR SingularBulletAmmo : Clip
+{
+  Inventory.PickupMessage "Got a singular bullet!"  
+  Tag "Singular Bullet"
+  Inventory.Amount 1
+  States
+  {
+  Spawn:
+    BULL A -1
+    Stop
+  }
+}

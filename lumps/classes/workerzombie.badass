@@ -3,7 +3,7 @@ ACTOR WorkerZombie : ZombieMan 26022
   Health 10
   Speed 10
   PainChance 200
-  DropItem ""
+  DropItem "SingularBulletAmmo"
   Tag "Worker Zombie"
   States
   {

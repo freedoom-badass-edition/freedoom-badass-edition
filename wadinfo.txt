@@ -103,5 +103,6 @@ ZOOMA0 -200 -100
 ZOOMB0 -170 -70
 ZOOMC0 -90 0
 ZOOMD0 -100 -10
+BULLA0 3 6
 
 # End of extraction
