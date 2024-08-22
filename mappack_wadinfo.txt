@@ -20,6 +20,7 @@ MAP14
 MAP15
 MAP16
 MAP17
+MAP20
 
 # List of data Lumps
 [lumps]
@@ -31,5 +32,6 @@ DEATHPIC
 D_MAP01
 D_MAP15
 D_READ_M
+D_SANS
 
 # End of extraction

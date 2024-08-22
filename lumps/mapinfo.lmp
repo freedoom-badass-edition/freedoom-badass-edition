@@ -176,6 +176,11 @@ Map MAP17 "Smekky's Bad*ss City"
 	Author = SmekkyBoy
 	AllowJump
 }
+Map MAP20 "Rogue-Like" {
+	Music = D_SANS
+	PAR = 600
+	Author = rostuhan
+}
 Intermission Deth
 {
 	TextScreen
