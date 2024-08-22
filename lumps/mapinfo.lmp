@@ -1,61 +1,77 @@
-Map MAP01 "Hydroelectronic Plant"
+ClearEpisodes
+Episode BADASS01
+{
+	Name = "Freedoom Bad*ss Mappack"
+	Optional
+}
+Episode E1M1
+{
+	Name = "Freedoom Phase 1"
+	Optional
+}
+Episode MAP01
+{
+	Name = "Freedoom Phase 2"
+	Optional
+}
+Map BADASS01 "Hydroelectronic Plant"
 {
 	LevelNum = 1
-	Next = MAP02
-	SecretNext = MAP02
+	Next = BADASS02
+	SecretNext = BADASS02
 	Sky1 = SKY1
 	Par = 15
 	Music = D_MAP01
 	DeathSequence = "Deth"
 	Author = Saver310
 }
-Map MAP02 "I eat the concrete from the sidewalk"
+Map BADASS02 "I eat the concrete from the sidewalk"
 {
 	LevelNum = 2
-	Next = MAP03
-	SecretNext = MAP03
+	Next = BADASS03
+	SecretNext = BADASS03
 	Sky1 = SKY1
 	Par = 30	
 	Music = D_STALKS
 	Author = Saver310
 }
-Map MAP03 "Geoff's Epic Maze of Death"
+Map BADASS03 "Geoff's Epic Maze of Death"
 {
 	LevelNum = 3
-	Next = MAP04
-	SecretNext = MAP04
+	Next = BADASS04
+	SecretNext = BADASS04
 	Sky1 = SKY1
 	Par = 45
 	Music = D_COUNTD
 	Author = Saver310
 }
 
-Map MAP04 "Geoff's Asshole"
+Map BADASS04 "Geoff's Asshole"
 {
 	LevelNum = 4
-	Next = MAP05
-	SecretNext = MAP05
+	Next = BADASS05
+	SecretNext = BADASS05
 	Sky1 = SKY1
 	Par = 15
 	Music = D_BETWEE
 	Author = Saver310
 }
-Map MAP05 "Dave 3D 'em"
+Map BADASS05 "Dave 3D 'em"
 {
 	LevelNum = 5
-	Next = MAP06
-	SecretNext = MAP06
+	Next = BADASS06
+	SecretNext = BADASS06
 	Sky1 = SKY1
 	Par = 30
 	Music = D_DOOM
 	Author = Saver310
 	NoCrouch
 }
-Map MAP06 "Marine Maze"
+Map BADASS06 "Marine Maze"
 {
 	LevelNum = 6
-	Next = MAP07
-	SecretNext = MAP07
+	Next = BADASS07
+	SecretNext = BADASS07
 	Sky1 = SKY1
 	Par = 30
 	Music = D_THE_DA
@@ -64,132 +80,132 @@ Map MAP06 "Marine Maze"
 	NoCrouch
 	NoFreeLook
 }
-Map MAP07 "Atomic Attack" 
+Map BADASS07 "Atomic Attack" 
 {
 	LevelNum = 7
-	Next = MAP08
-	SecretNext = MAP08
+	Next = BADASS08
+	SecretNext = BADASS08
 	Sky1 = SKY1
 	Par = 60
 	Music = D_SHAWN
 	Author = rostuhan
 }
-Map MAP08 "Shit Attack (Mom said it's my turn on the xbox)" 
+Map BADASS08 "Shit Attack (Mom said it's my turn on the xbox)" 
 {
 	LevelNum = 8
-	Next = MAP09
-	SecretNext = MAP09
+	Next = BADASS09
+	SecretNext = BADASS09
 	Sky1 = SKY1
 	Par = 3
 	Music = D_DDTBLU
 	Author = SmekkyBoy
 }
-Map MAP09 "Open World Bad*ssery" 
+Map BADASS09 "Open World Bad*ssery" 
 {
 	LevelNum = 9
-	Next = MAP10
-	SecretNext = MAP10
+	Next = BADASS10
+	SecretNext = BADASS10
 	Sky1 = SKY1
 	Par = 35
 	Music = D_IN_CIT
 	Author = blitzdoughnuts
 }
-Map MAP10 "The Servants of David William"
+Map BADASS10 "The Servants of David William"
 {
 	LevelNum = 10
-	Next = MAP11
-	SecretNext = MAP11
+	Next = BADASS11
+	SecretNext = BADASS11
 	Sky1 = FIREWALA
 	Par = 60
 	Music = D_READ_M
 	Author = rostuhan
 }
-Map MAP11 "Light at the End of David William's Tunnel"
+Map BADASS11 "Light at the End of David William's Tunnel"
 {
 	LevelNum = 11
-	Next = MAP12
-	SecretNext = MAP12
+	Next = BADASS12
+	SecretNext = BADASS12
 	Sky1 = SKY1
 	Par = 10
 	Music = D_STLKS2
 	Author = Saver310
 }
-Map MAP12 "Mission \"Ancient Troll\""
+Map BADASS12 "Mission \"Ancient Troll\""
 {
 	LevelNum = 12
-	Next = MAP13
-	SecretNext = MAP13
+	Next = BADASS13
+	SecretNext = BADASS13
 	Sky1 = HELP
 	Music = D_READ_M
 	Par = 120
 	Author = rostuhan
 }
-Map MAP13 "Sailor Moon"
+Map BADASS13 "Sailor Moon"
 {
 	LevelNum = 13
-	Next = MAP14
-	SecretNext = MAP14
+	Next = BADASS14
+	SecretNext = BADASS14
 	Sky1 = SKY2
 	Music = D_DOOM2
 	Par = 25
 	Author = Saver310
 }
-Map MAP14 "Bad*ss Minesweeper"
+Map BADASS14 "Bad*ss Minesweeper"
 {
 	LevelNum = 14
-	Next = MAP15
-	SecretNext = MAP15
+	Next = BADASS15
+	SecretNext = BADASS15
 	Sky1 = SKY2
 	Music = D_EVIL
 	Author = Saver310
 	NoInfighting
 	RandomPlayerStarts
 }
-Map MAP15 "Blood Filled Subway"
+Map BADASS15 "Blood Filled Subway"
 {
 	LevelNum = 15
-	Next = MAP16
-	SecretNext = MAP16
+	Next = BADASS16
+	SecretNext = BADASS16
 	Sky1 = SKY2
 	Music = D_MAP15
 	Par = 70
 	Author = Saver310
 	ClipMidTextures
 }
-Map MAP16 "I drink nukage" {
+Map BADASS16 "I drink nukage" {
 	LevelNum = 16
-	Next = MAP17
-	SecretNext = MAP17
+	Next = BADASS17
+	SecretNext = BADASS17
 	Sky1 = HELP
 	Music = D_DEAD2
 	Par = 150
 	Author = rostuhan
 }
-Map MAP17 "Smekky's Bad*ss City"
+Map BADASS17 "Smekky's Bad*ss City"
 {
 	LevelNum = 17
-	Next = MAP19
-	SecretNext = MAP19
+	Next = BADASS19
+	SecretNext = BADASS19
 	Sky1 = SKY2
-	Music = D_SHAWN2
+	Music = D_STLKS3
 	Par = 30
 	Author = SmekkyBoy
 	AllowJump
 }
-Map MAP19 "A Factory That Makes Stuff"
+Map BADASS19 "A Factory That Makes Stuff"
 {
 	LevelNum = 19
-	Next = MAP20
-	SecretNext = MAP20
+	Next = BADASS20
+	SecretNext = BADASS20
 	Sky1 = SKY2
 	Music = D_SHAWN2
 	Par = 30
 	Author = Saver310
 }
-Map MAP20 "Rogue-Like" {
+Map BADASS20 "Rogue-Like" {
 	LevelNum = 20
-	Next = MAP21
-	SecretNext = MAP21
+	Next = BADASS21
+	SecretNext = BADASS21
 	Sky1 = SKY2
 	Music = D_SANS
 	Par = 600
@@ -202,4 +218,42 @@ Intermission Deth
 		Background = "DEATHPIC"
 		Text = "You fucked up"
 	}
+}
+ClearSkills
+Skill Baby
+{
+	AutoUseHealth
+	AmmoFactor = 2
+	DamageFactor = 0.5
+	EasyBossBrain
+	SpawnFilter = Baby
+	Name = "I'm Ass"
+}
+Skill Easy
+{
+	EasyBossBrain
+	SpawnFilter = Easy
+	Name = "I'm Bad"
+}
+Skill Normal
+{
+	SpawnFilter = Normal
+	Name = "I'm Badass"
+	DefaultSkill
+}
+Skill Hard
+{
+	SpawnFilter = Hard
+	Name = "I'm Bad*ss"
+}
+Skill Nightmare
+{
+	AmmoFactor = 2
+	FastMonsters
+	InstantReaction
+	DisableCheats
+	RespawnTime = 12
+	SpawnFilter = Nightmare
+	Name = "Erectile Disfunction"
+	MustConfirm
 }

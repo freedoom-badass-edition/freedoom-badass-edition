@@ -3,6 +3,7 @@
 
 # List of data Lumps
 [lumps]
+MAPINFO
 DECORATE
 KEYCONF
 SNDINFO
