@@ -168,17 +168,31 @@ Map MAP16 "I drink nukage" {
 Map MAP17 "Smekky's Bad*ss City"
 {
 	LevelNum = 17
-	Next = MAP18
-	SecretNext = MAP18
+	Next = MAP19
+	SecretNext = MAP19
 	Sky1 = SKY2
 	Music = D_SHAWN2
 	Par = 30
 	Author = SmekkyBoy
 	AllowJump
 }
+Map MAP19 "A Factory That Makes Stuff"
+{
+	LevelNum = 19
+	Next = MAP20
+	SecretNext = MAP20
+	Sky1 = SKY2
+	Music = D_SHAWN2
+	Par = 30
+	Author = Saver310
+}
 Map MAP20 "Rogue-Like" {
+	LevelNum = 20
+	Next = MAP21
+	SecretNext = MAP21
+	Sky1 = SKY2
 	Music = D_SANS
-	PAR = 600
+	Par = 600
 	Author = rostuhan
 }
 Intermission Deth
