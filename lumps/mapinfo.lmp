@@ -45,7 +45,6 @@ Map BADASS03 "Geoff's Epic Maze of Death"
 	Music = D_COUNTD
 	Author = Saver310
 }
-
 Map BADASS04 "Geoff's Asshole"
 {
 	LevelNum = 4
@@ -211,6 +210,16 @@ Map BADASS20 "Rogue-Like" {
 	Par = 300
 	Author = rostuhan
 }
+Map BADASS21 "Nacht Der Un Badass"
+{
+	LevelNum = 21
+	Next = BADASS22
+	SecretNext = BADASS22
+	Sky1 = SKY3
+	Music = D_COUNT2
+	Par = 10
+	Author = SmekkyBoy
+}
 Map BADASS30 "Victory of Jaws"
 {
 	LevelNum = 30
@@ -220,6 +229,7 @@ Map BADASS30 "Victory of Jaws"
 	Par = 45
 	Author = Saver310
 }
+
 Intermission Deth
 {
 	TextScreen
