@@ -22,6 +22,7 @@ BADASS16
 BADASS17
 BADASS19
 BADASS20
+BADASS30
 
 # List of data Lumps
 [lumps]

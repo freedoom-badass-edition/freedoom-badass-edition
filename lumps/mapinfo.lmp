@@ -211,6 +211,14 @@ Map BADASS20 "Rogue-Like" {
 	Par = 300
 	Author = rostuhan
 }
+Map BADASS30 "Victory of Jaws"
+{
+	LevelNum = 30
+	Sky1 = SKY3
+	Music = D_OPENIN
+	Par = 45
+	Author = Saver310
+}
 Intermission Deth
 {
 	TextScreen
