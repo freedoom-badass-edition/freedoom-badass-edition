@@ -236,12 +236,37 @@ Intermission TheBadassEnd
 		Text = "After pumping a shit ton of plasma testicles",
 			   "into the jaw the jaw dies"
 	}
+	Link = TheBadassCast
+}
+Intermission TheBadassCast
+{
 	Cast
 	{
-	  CastClass = "DriverSailor"
-	  CastName = "Shithead"
-	  AttackSound = "Missile", 1, "Sraka"
+		Background = "FLOOR0_1", 1
+		Music = "D_EVIL"
+		CastClass = "ZombieCast"
+		CastName = "Zombie"
+		AttackSound = "Missile", 1, "grunt/attack"
 	}
+	Cast
+	{
+		CastClass = "TheNukerCast"
+		CastName = "The Nuker"
+		AttackSound = "Missile", 1, "Sraka"
+	}
+	Cast
+	{
+		CastClass = "WorkerZombieCast"
+		CastName = "Worker Zombie"
+		AttackSound = "Missile", 1, "skeleton/swing"
+	}
+	Cast
+	{
+		CastClass = "DriverSailorCast"
+		CastName = "Tough Sailor"
+		AttackSound = "Missile", 1, "wolfss/attack"
+	}
+	Link = TheBadassCast
 }
 ClearSkills
 Skill Baby
