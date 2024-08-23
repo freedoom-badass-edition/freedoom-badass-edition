@@ -214,6 +214,7 @@ Map BADASS20 "Rogue-Like" {
 Map BADASS30 "Victory of Jaws"
 {
 	LevelNum = 30
+	Next = endsequence,TheBadassEnd
 	Sky1 = SKY3
 	Music = D_OPENIN
 	Par = 45
@@ -225,6 +226,21 @@ Intermission Deth
 	{
 		Background = "DEATHPIC"
 		Text = "You fucked up"
+	}
+}
+Intermission TheBadassEnd
+{
+	TextScreen
+	{
+		Background = "FLOOR0_1", 1
+		Text = "After pumping a shit ton of plasma testicles",
+			   "into the jaw the jaw dies"
+	}
+	Cast
+	{
+	  CastClass = "DriverSailor"
+	  CastName = "Shithead"
+	  AttackSound = "Missile", 1, "Sraka"
 	}
 }
 ClearSkills
