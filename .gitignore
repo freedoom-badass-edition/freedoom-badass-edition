@@ -1,11 +1,11 @@
 # Unused anymore
-freedoom_badass_edition.wad
 freedoom_badass_mappack.wad
+freedoom_badass_edition (wadinfo).wad
+freedoom_badass_edition (mappack_wadinfo).wad
 freedoom_badass_edition (wadinfo)
 freedoom_badass_edition (mappack_wadinfo)
 # Used
-freedoom_badass_edition (wadinfo).wad
-freedoom_badass_edition (mappack_wadinfo).wad
+freedoom_badass_edition.wad
 *.bak
 *.backup1
 *.backup2

@@ -24,4 +24,6 @@ for f in os.listdir("lumps/classes"):
 shutil.copy("IWAD.wad", "Build/doom2.wad")
 shutil.copy("deutex", "Build/deutex")
 os.chdir("Build")
-os.system("./deutex -rate accept -doom2 doom2.wad -build wadinfo.txt \"../freedoom_badass_edition ({}).wad\"".format(sys.argv[1]))
+os.system("./deutex -rate accept -doom2 doom2.wad -build wadinfo.txt \"../freedoom_badass_edition.wad\"".format(sys.argv[1]))
+os.chdir('..')
+shutil.rmtree("Build")

@@ -1,1 +1,0 @@
-python build.py mappack_wadinfo
