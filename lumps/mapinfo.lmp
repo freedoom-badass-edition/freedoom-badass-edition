@@ -165,7 +165,7 @@ Map BADASS15 "Blood Filled Subway"
 {
 	LevelNum = 15
 	Next = BADASS16
-	SecretNext = BADASS16
+	SecretNext = BADASS31
 	Sky1 = SKY2
 	Music = D_MAP15
 	Par = 70
@@ -208,7 +208,7 @@ Map BADASS20 "Rogue-Like" {
 	SecretNext = BADASS21
 	Sky1 = SKY2
 	Music = D_SANS
-	Par = 600
+	Par = 300
 	Author = rostuhan
 }
 Intermission Deth
@@ -259,5 +259,6 @@ Skill Nightmare
 }
 GameInfo
 {
+   QuitSound = "Sraka"
    PlayerClasses = "BadassPlayer"
 }
