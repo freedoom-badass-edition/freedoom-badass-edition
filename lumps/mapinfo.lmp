@@ -217,7 +217,6 @@ Map BADASS21 "Nacht Der Un Badass"
 	SecretNext = BADASS22
 	Sky1 = SKY3
 	Music = D_COUNT2
-	Par = 10
 	Author = SmekkyBoy
 }
 Map BADASS30 "Victory of Jaws"
