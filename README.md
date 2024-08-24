@@ -29,12 +29,13 @@ git clone https://github.com/freedoom-badass-edition/freedoom-badass-edition
 ```
 cd freedoom-badass-edition
 ./build.sh
-./build_mappack.sh
 ```
 
 ## building on windows
 
+(we haven't built the special deutex for windows yet so this method might not work)
+
 1. install python
 2. clone the repository
 3. install deutex in the repository
-4. run the batch file (build.bat for the main mod, build_mappack.bat for the mappack) located in the repository
+4. run the batch file (build.bat) located in the repository
