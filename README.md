@@ -10,7 +10,6 @@ discord: https://discord.gg/wsBdTfru9z
 
 ### prerequisites
 
-- deutex
 - python
 - a computer (with linux)
 - functioning brain
