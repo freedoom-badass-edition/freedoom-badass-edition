@@ -5,4 +5,6 @@ S3DUMMY     		128	128
 *	S3DUMMY     	0	0
 TCAMTEX1    		128	64
 *	TCAMTEX1    	0	0
+SCROTUMN    		128	8
+*	SCROTUMN    	0	0
 ;End
