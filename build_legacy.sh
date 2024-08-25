@@ -1,0 +1,1 @@
+python build_legacy.py wadinfo
