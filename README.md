@@ -6,12 +6,13 @@ made for zdoom-based sourceports
 
 discord: https://discord.gg/wsBdTfru9z
 
-## building on linux
+## building
 
 ### prerequisites
 
-- python
-- a computer (with linux)
+- python (with omgifol)
+- DeuTex (in your system path)
+- a computer (with linux or Windows)
 - functioning brain
 - keyboard
 
@@ -27,14 +28,7 @@ git clone https://github.com/freedoom-badass-edition/freedoom-badass-edition
 
 ```
 cd freedoom-badass-edition
-./build.sh
+./build.X
 ```
-
-## building on windows
-
-(we haven't built the special deutex for windows yet so this method might not work)
-
-1. install python
-2. clone the repository
-3. install deutex in the repository
-4. run the batch file (build.bat) located in the repository
+X is sh if you're using Linux
+X is bat if you're using Windows
