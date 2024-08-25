@@ -4,7 +4,7 @@ import os, shutil, sys
 if os.path.exists("Build"):
     shutil.rmtree("Build")
 os.mkdir("Build")
-for Dir in ["graphics", "levels", "lumps", "musics", "sounds", "sprites"]:
+for Dir in ["graphics", "levels", "lumps", "musics", "sounds", "sprites", "textures", "patches"]:
     os.mkdir(os.path.join("Build", Dir))
     for f in os.listdir(Dir):
         f = os.path.join(Dir, f)

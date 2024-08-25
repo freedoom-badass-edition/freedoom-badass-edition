@@ -191,6 +191,15 @@ Map BADASS17 "Smekky's Bad*ss City"
 	Author = SmekkyBoy
 	AllowJump
 }
+Map BADASS18 "cameratexture"
+{
+	LevelNum = 18
+	Next = BADASS19
+	SecretNext = BADASS19
+	Sky1 = SKY2
+	Music = D_ROMERO
+	Author = Saver310
+}
 Map BADASS19 "A Factory That Makes Stuff"
 {
 	LevelNum = 19

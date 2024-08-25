@@ -20,6 +20,7 @@ BADASS14
 BADASS15
 BADASS16
 BADASS17
+BADASS18
 BADASS19
 BADASS20
 BADASS21
@@ -32,6 +33,11 @@ DEATHPIC
 DECORATE
 SNDINFO
 ENDOOM
+ANIMDEFS
+
+# List of definitions for TEXTURE1
+[texture1]
+TEXTURE1
 
 # List of Musics
 [musics]
@@ -136,5 +142,10 @@ ZOOMB0 -170 -70
 ZOOMC0 -90 0
 ZOOMD0 -100 -10
 BULLA0 3 6
+
+# List of patches
+[patches]
+S3DUMMY
+TCAMTEX1
 
 # End of extraction
