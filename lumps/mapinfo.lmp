@@ -176,7 +176,7 @@ Map BADASS16 "I drink nukage" {
 	Next = BADASS17
 	SecretNext = BADASS17
 	Sky1 = HELP
-	Music = D_DEAD2
+	Music = D_READ_M
 	Par = 150
 	Author = rostuhan
 }

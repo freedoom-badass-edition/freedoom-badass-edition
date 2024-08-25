@@ -1,1 +1,1 @@
-python build.py wadinfo
+python build.py
