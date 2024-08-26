@@ -7,6 +7,6 @@ Actor NuclearFucket : CustomInventory 26018 {
             Loop
         Pickup:
             TNT1 A 0 A_PlaySound("Sraka")
-            TNT1 A 0 A_SpawnItem("PlasmaNuke")
+            TNT1 A 0 A_SpawnItemEx("PlasmaNuke")
     }
 }

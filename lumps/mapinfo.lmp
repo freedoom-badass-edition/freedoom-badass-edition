@@ -240,6 +240,16 @@ Map BADASS22 "Non-Vehicular Duendeslaughter"
 	Par = 30
 	Author = Saver310
 }
+Map BADASS23 "Destroy the Machine of Death!!! (Worst Level)"
+{
+	LevelNum = 23
+	Next = BADASS24
+	SecretNext = BADASS24
+	Sky1 = SKY3
+	Music = D_AMPIE
+	Par = 2
+	Author = Saver310
+}
 Map BADASS30 "Victory of Jaws"
 {
 	LevelNum = 30

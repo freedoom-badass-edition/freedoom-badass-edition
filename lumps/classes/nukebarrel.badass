@@ -1,0 +1,14 @@
+ACTOR NukeBarrel : ExplosiveBarrel 26023
+{
+  Tag "Nuke Barrel"
+  States
+  {
+  Death:
+    BEXP A 5 Bright
+    BEXP B 5 Bright A_Scream
+    BEXP C 5 Bright
+    BEXP D 5 Bright A_SpawnItemEx("PlasmaNuke")
+    BEXP E 10 Bright
+    Stop
+  }
+}
