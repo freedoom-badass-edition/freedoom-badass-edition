@@ -183,20 +183,21 @@ Map BADASS16 "I drink nukage" {
 Map BADASS17 "Smekky's Bad*ss City"
 {
 	LevelNum = 17
-	Next = BADASS19
-	SecretNext = BADASS19
+	Next = BADASS18
+	SecretNext = BADASS18
 	Sky1 = SKY2
 	Music = D_STLKS3
 	Par = 30
 	Author = SmekkyBoy
 	AllowJump
 }
-Map BADASS18 "cameratexture"
+Map BADASS18 "Bydgoszcz (Hell)"
 {
 	LevelNum = 18
 	Next = BADASS19
 	SecretNext = BADASS19
 	Sky1 = SKY2
+	Sky2 = SKY3
 	Music = D_ROMERO
 	Author = Saver310
 }
@@ -205,7 +206,7 @@ Map BADASS19 "A Factory That Makes Stuff"
 	LevelNum = 19
 	Next = BADASS20
 	SecretNext = BADASS20
-	Sky1 = SKY2
+	Sky1 = SKY3
 	Music = D_SHAWN2
 	Par = 30
 	Author = Saver310
@@ -214,7 +215,7 @@ Map BADASS20 "Rogue-Like" {
 	LevelNum = 20
 	Next = BADASS21
 	SecretNext = BADASS21
-	Sky1 = SKY2
+	Sky1 = SKY3
 	Music = D_SANS
 	Par = 300
 	Author = rostuhan
@@ -322,6 +323,34 @@ Skill Nightmare
 	RespawnTime = 12
 	SpawnFilter = Nightmare
 	Name = "Erectile Disfunction"
+	MustConfirm
+}
+Skill Erect
+{
+	AmmoFactor = 2
+	DisableCheats
+	NoPain
+	NoInfighting
+	MonsterHealth = 2
+	HealthFactor = 2
+	KickbackFactor = 4
+	DamageFactor = 2
+	SpawnFilter = Nightmare
+	Name = "Harder than Erectile Function"
+	MustConfirm
+}
+Skill FuckOff
+{
+	FastMonsters
+	InstantReaction
+	DisableCheats
+	NoPain
+	NoInfighting
+	MonsterHealth = 10
+	KickbackFactor = 10
+	DamageFactor = 10
+	SpawnFilter = Nightmare
+	Name = "Fuck off"
 	MustConfirm
 }
 GameInfo
