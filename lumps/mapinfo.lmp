@@ -199,6 +199,7 @@ Map BADASS18 "Bydgoszcz (Hell)"
 	Sky1 = SKY2
 	Sky2 = SKY3
 	Music = D_ROMERO
+	Par = 60
 	Author = Saver310
 }
 Map BADASS19 "A Factory That Makes Stuff"
