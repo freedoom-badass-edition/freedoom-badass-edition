@@ -59,6 +59,7 @@ DSSAWSAW
 DSSRAKA
 DSKYS
 ZOOMPUNC
+DSSSRES
 
 # List of Pictures (with insertion point)
 [graphics]

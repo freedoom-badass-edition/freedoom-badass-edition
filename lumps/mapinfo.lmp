@@ -115,7 +115,7 @@ Map BADASS10 "The Servants of David William"
 	Next = BADASS11
 	SecretNext = BADASS11
 	Sky1 = FIREWALA
-	Par = 60
+	Par = 30
 	Music = D_READ_M
 	Author = rostuhan
 }
