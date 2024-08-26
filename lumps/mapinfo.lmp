@@ -229,6 +229,16 @@ Map BADASS21 "Nacht Der Un Badass"
 	Music = D_COUNT2
 	Author = SmekkyBoy
 }
+Map BADASS22 "Non-Vehicular Duendeslaughter"
+{
+	LevelNum = 22
+	Next = BADASS23
+	SecretNext = BADASS23
+	Sky1 = SKY3
+	Music = D_DDTBL3
+	Par = 30
+	Author = Saver310
+}
 Map BADASS30 "Victory of Jaws"
 {
 	LevelNum = 30
