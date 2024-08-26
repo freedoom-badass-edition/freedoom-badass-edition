@@ -56,7 +56,7 @@ ACTOR DriverSailor : WolfensteinSS 26020
 
 ACTOR FakeDeathSailor : WolfensteinSS 26021
 {
-  GibHealth 40
+  GibHealth 30
   DropItem ""
   ReactionTime 2
   Tag "Fake Death Sailor"
