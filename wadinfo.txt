@@ -20,13 +20,14 @@ BADASS14
 BADASS15
 BADASS16
 BADASS17
-BADASS18
+# BADASS18 - E WW81 No level in WAD ./levels/map18.wad
 BADASS19
 BADASS20
 BADASS21
-BADASS22
-BADASS23
+# BADASS22 - E WW81 No level in WAD ./levels/map22.wad
+# BADASS23 - E WW81 No level in WAD ./levels/map23.wad
 BADASS30
+BADASS32
 
 # List of data Lumps
 [lumps]
@@ -47,6 +48,7 @@ D_MAP01
 D_MAP15
 D_READ_M
 D_SANS
+D_BOSS
 
 # List of Sounds
 [sounds]

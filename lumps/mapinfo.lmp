@@ -259,6 +259,15 @@ Map BADASS30 "Victory of Jaws"
 	Par = 45
 	Author = Saver310
 }
+Map BADASS32 "Breaking Bad*ss" {
+		LevelNum = 32
+		Next = BADASS16
+		SecretNext = BADASS16
+		Sky1 = SKY3
+		Music = D_SANS
+		Par = 600
+		Author = rostuhan
+}
 
 Intermission Deth
 {
