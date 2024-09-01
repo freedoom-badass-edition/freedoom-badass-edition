@@ -1,18 +1,6 @@
-ClearEpisodes
 Episode BADASS01
 {
 	Name = "Freedoom Bad*ss Mappack"
-	Optional
-}
-Episode E1M1
-{
-	Name = "Freedoom Phase 1"
-	Optional
-}
-Episode MAP01
-{
-	Name = "Freedoom Phase 2"
-	Optional
 }
 Map BADASS01 "Hydroelectronic Plant"
 {
