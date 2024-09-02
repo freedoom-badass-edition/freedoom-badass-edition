@@ -32,4 +32,5 @@ cd freedoom-badass-edition
 ```
 X is sh if you're using Linux
 X is bat if you're using Windows
+
 You can also use build_legacy.sh instead of build.sh if you encounter problems
