@@ -1,5 +1,5 @@
 # OUTDATED - Arguments: wadinfo name (no extension, but the file has to be .txt)
-# Made by rostuhan
+# Made by rostuhan and grip taped by Saver310
 import os, shutil, sys, re
 from omg import *
 if os.path.exists("Build"):
@@ -30,6 +30,13 @@ for f in os.listdir("lumps/classes"):
             dec.close()
     f.close()
 shutil.copy("IWAD.wad", "Build/doom2.wad")
+# This is a disaster! But hey, it works.
+shutil.copy("deutex.exe", "Build/deutex.exe")
+shutil.copy("libgcc_s_dw2-1.dll", "Build/libgcc_s_dw2-1.dll")
+shutil.copy("libpng16-16.dll", "Build/libpng16-16.dll")
+shutil.copy("libssp-0.dll", "Build/libssp-0.dll")
+shutil.copy("libwinpthread-1.dll", "Build/libwinpthread-1.dll")
+shutil.copy("zlib1.dll", "Build/zlib1.dll")
 os.chdir("Build")
 os.system("deutex -rate accept -doom2 doom2.wad -build wadinfo.txt ../freedoom_badass_edition.wad")
 os.chdir("..")
