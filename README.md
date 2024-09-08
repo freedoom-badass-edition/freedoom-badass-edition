@@ -10,7 +10,7 @@ discord: https://discord.gg/wsBdTfru9z
 
 ### prerequisites
 
-- a computer (with linux or Windows)
+- a device that runs anything zdoom based
 - functioning brain
 - keyboard
 
