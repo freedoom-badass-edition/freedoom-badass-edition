@@ -6,31 +6,16 @@ made for zdoom-based sourceports
 
 discord: https://discord.gg/wsBdTfru9z
 
-## building
+## launching the mod
 
 ### prerequisites
 
-- python (with omgifol)
-- DeuTex (in your system path)
 - a computer (with linux or Windows)
 - functioning brain
 - keyboard
 
 ### guide
 
-1. clone the repository
+1. clone the repository download zip whatever
 
-```
-git clone https://github.com/freedoom-badass-edition/freedoom-badass-edition
-```
-
-2. run the script
-
-```
-cd freedoom-badass-edition
-./build.X
-```
-X is sh if you're using Linux
-X is bat if you're using Windows
-
-You can also use build_legacy.sh instead of build.sh if you encounter problems
+2. drag and drop the folder or file into gzdoom
