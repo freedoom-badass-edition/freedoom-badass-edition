@@ -1,1 +1,0 @@
-python build_linux.py wadinfo
