@@ -1169,3 +1169,16 @@ ACTOR WorkerZombieCast : ZombieMan
     Stop
   }
 }
+ACTOR Trilobyte : Cacodemon replaces Cacodemon
+{
+  States
+  {
+  XDeath:
+    HEAD M 5
+    HEAD N 5 A_XScream
+    HEAD O 5 A_NoBlocking
+    HEAD PQ 5
+    HEAD R -1
+    Stop
+  }
+}

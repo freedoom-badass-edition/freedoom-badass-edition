@@ -238,6 +238,16 @@ Map BADASS23 "Destroy the Machine of Death!!! (Worst Level)"
 	Par = 2
 	Author = Saver310
 }
+Map BADASS29 "Big Timmy's Domain"
+{
+	LevelNum = 29
+	Next = BADASS30
+	SecretNext = BADASS30
+	Sky1 = SKY3
+	Music = D_SHAWN3
+	Par = 20
+	Author = SmekkyBoy
+}
 Map BADASS30 "Victory of Jaws"
 {
 	LevelNum = 30
@@ -354,22 +364,8 @@ Skill Erect
 	KickbackFactor = 4
 	DamageFactor = 2
 	SpawnFilter = Nightmare
-	Name = "Harder than Erectile Function"
-	MustConfirm
-}
-Skill FuckOff
-{
-	FastMonsters
-	InstantReaction
-	DisableCheats
-	NoPain
-	NoInfighting
-	MonsterHealth = 10
-	KickbackFactor = 10
-	DamageFactor = 10
-	SpawnFilter = Nightmare
-	Name = "Fuck off"
-	MustConfirm
+	Name = "Infertility"
+	MustConfirm = "Fuck"
 }
 GameInfo
 {
