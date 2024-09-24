@@ -264,7 +264,7 @@ Map BADASS31 "Warrens or Something Idk" {
 		Sky1 = SKY3
 		Music = D_EVIL
 		Par = 600
-		Author = Xiaojun Yue (Dari)
+		Author = "Xiaojun Yue (Dari)"
 }
 Map BADASS32 "Breaking Bad*ss" {
 		LevelNum = 32
