@@ -257,6 +257,15 @@ Map BADASS30 "Victory of Jaws"
 	Par = 45
 	Author = Saver310
 }
+Map BADASS31 "Warrens or Something Idk" {
+		LevelNum = 31
+		Next = BADASS16
+		SecretNext = BADASS32
+		Sky1 = SKY3
+		Music = D_EVIL
+		Par = 600
+		Author = Xiaojun Yue (Dari)
+}
 Map BADASS32 "Breaking Bad*ss" {
 		LevelNum = 32
 		Next = BADASS16
