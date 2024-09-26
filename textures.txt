@@ -47,4 +47,14 @@ Sprite "zoomd0", 208, 96
 	Sprite "sprites/zooma0.png", 0, 0
 }
 
+Texture "teevee", 48, 32
+{
+	Patch "textures/teevee.png", 0, 0
+}
+
+Texture "tvstatic", 40, 30
+{
+	Patch "textures/tvstata.png", 0, 0
+}
+
 // End of texture definitions

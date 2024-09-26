@@ -1,1 +1,8 @@
 cameratexture TCAMTEX1 256 128
+
+texture tvstatic
+    pic textures/tvstata.png tics 2
+    pic textures/tvstatb.png tics 2
+    pic textures/tvstatc.png tics 2
+    pic textures/tvstatd.png tics 2
+    pic textures/tvstate.png tics 2
