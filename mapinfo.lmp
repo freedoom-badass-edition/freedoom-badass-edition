@@ -61,7 +61,7 @@ Map BADASS06 "Marine Maze"
 	SecretNext = BADASS07
 	Sky1 = SKY1
 	Par = 30
-	Music = D_THE_DA
+	Music = D_WALDEK
 	Author = Saver310
 	NoJump
 	NoCrouch
