@@ -275,6 +275,13 @@ Map BADASS32 "Breaking Bad*ss" {
 		Par = 600
 		Author = rostuhan
 }
+Map BADASS86 "If it exists, you can play Bad Apple on it." {
+	LevelNum = 86
+	Next = BADASS28
+	Music = D_APPLE
+	Par = -420
+	Author = rostuhan
+}
 
 Intermission Deth
 {
