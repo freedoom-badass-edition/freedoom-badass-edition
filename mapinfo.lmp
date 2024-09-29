@@ -209,26 +209,26 @@ Map BADASS20 "Rogue-Like" {
 	Par = 300
 	Author = rostuhan
 }
-Map BADASS21 "Nacht Der Un Badass"
+Map BADASS21 "Nacht Der Un Bad*ss"
 {
 	LevelNum = 21
-	Next = BADASS22
-	SecretNext = BADASS22
+	Next = BADASS29
+	SecretNext = BADASS29
 	Sky1 = SKY3
 	Music = D_COUNT2
+	Par = 125
 	Author = SmekkyBoy
 }
-Map BADASS22 "Non-Vehicular Duendeslaughter"
+Map BADASS22 "Bad*ss Unversity Thing"
 {
 	LevelNum = 22
 	Next = BADASS23
 	SecretNext = BADASS23
 	Sky1 = SKY3
-	Music = D_DDTBL3
-	Par = 30
+	Music = D_IN_CIT
 	Author = Saver310
 }
-Map BADASS23 "Destroy the Machine of Death!!! (Worst Level)"
+Map BADASS23 "Destroy the Machine of Death!!! (the worst level please get rid of it)"
 {
 	LevelNum = 23
 	Next = BADASS24
@@ -257,7 +257,7 @@ Map BADASS30 "Victory of Jaws"
 	Par = 45
 	Author = Saver310
 }
-Map BADASS31 "Warrens or Something Idk" {
+Map BADASS31 "Warrens or something idk" {
 		LevelNum = 31
 		Next = BADASS16
 		SecretNext = BADASS32
@@ -275,11 +275,11 @@ Map BADASS32 "Breaking Bad*ss" {
 		Par = 600
 		Author = rostuhan
 }
-Map BADASS86 "If it exists, you can play Bad Apple on it." {
+Map BADASS86 "Bad*ss Apple" {
 	LevelNum = 86
 	Next = BADASS28
+	SecretNext = BADASS28
 	Music = D_APPLE
-	Par = -420
 	Author = rostuhan
 }
 
