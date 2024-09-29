@@ -1169,6 +1169,7 @@ ACTOR WorkerZombieCast : ZombieMan
     Stop
   }
 }
+
 ACTOR Trilobyte : Cacodemon replaces Cacodemon
 {
   States
@@ -1179,6 +1180,23 @@ ACTOR Trilobyte : Cacodemon replaces Cacodemon
     HEAD O 5 A_NoBlocking
     HEAD PQ 5
     HEAD R -1
+    Stop
+  }
+}
+
+
+ACTOR Saver310
+{
+  States
+  {
+  See:
+    SAVR A 2 A_Chase
+    Goto Missile
+  Missile:
+    SAVR A 40
+    Goto Death
+  Death:
+    SAVR A 0
     Stop
   }
 }

@@ -329,6 +329,12 @@ Intermission TheBadassCast
 		CastName = "Tough Sailor"
 		AttackSound = "Missile", 1, "wolfss/attack"
 	}
+	Cast
+	{
+		CastClass = "Saver310"
+		CastName = "Saver310"
+		AttackSound = "Missile", 0, "bebech"
+	}
 	Link = TheBadassCast
 }
 ClearSkills
