@@ -215,10 +215,14 @@ class GlassJunkNew : GlassShard replaces GlassJunk
 
 class DeathsheadFigurine : Actor
 {
+	Default 
+	{
+		Tag "Ace Deatshead Figurine";
+	}
 	States
 	{
 		Spawn:
 			ACED A -1;
-			Stop;
+			Loop;
 	}
 }
