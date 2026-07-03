@@ -139,4 +139,7 @@ Texture "endles02", 1920, 1080
 	Patch "textures/frame.png", 0, 0
 }
 
+
+Sprite "aceda0", 32, 32
+
 // End of texture definitions
