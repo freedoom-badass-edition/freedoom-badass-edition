@@ -212,3 +212,13 @@ class GlassJunkNew : GlassShard replaces GlassJunk
 		Stop;
 	}
 }
+
+class DeathsheadFigurine : Actor
+{
+	States
+	{
+		Spawn:
+			ACED A -1;
+			Stop;
+	}
+}
