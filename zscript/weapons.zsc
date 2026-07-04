@@ -1386,13 +1386,13 @@ class SpanishPistol : Pistol
 	FireCocaine:
 		PSSG B 3
 		{
-		   A_FireBullets (4, 2, 5, random(50,500), "BulletPuff", FBF_USEAMMO|FBF_NORANDOM);
+		   A_FireBullets (4, 2, 5, random(64,128), "BulletPuff", FBF_USEAMMO|FBF_NORANDOM);
 		   A_StartSound("weapons/spanishpistol", CHAN_WEAPON, CHANF_DEFAULT, 1.0, ATTN_NORM, 0.75);
 		   A_GunFlash();
 		}
 		PSSG B 2
 		{
-		   A_FireBullets (4, 2, 5, random(50,500), "BulletPuff", FBF_USEAMMO|FBF_NORANDOM);
+		   A_FireBullets (4, 2, 5, random(64,128), "BulletPuff", FBF_USEAMMO|FBF_NORANDOM);
 		   A_StartSound("weapons/spanishpistol", CHAN_AUTO, CHANF_DEFAULT, 0.5, ATTN_NORM, 0.75);
 		   A_GunFlash();
 		}
