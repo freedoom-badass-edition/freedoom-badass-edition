@@ -60,11 +60,11 @@ CLASS SpanishPlayer : BadassPlayer {
 		SSWV M -1;
 		Stop;
 	XDeath:
-		SSWV O 5;
-		SSWV P 5 A_XScream;
-		SSWV Q 5 A_NoBlocking;
-		SSWV RSTUV 5;
-		SSWV W -1;
+		SSWV N 5;
+		SSWV O 5 A_XScream;
+		SSWV P 5 A_NoBlocking;
+		SSWV QRSTU 5;
+		SSWV V -1;
 		Stop;
 	}
 }
