@@ -1,0 +1,9 @@
+Model DeathsheadFigurine
+{
+   Path "models/deathshead"
+   Model 0 "deathshead.md3"
+   Skin 0 "deathshead.png"
+   Scale 2 2 2
+   ZOffset 6
+   FrameIndex ACED A 0 0
+}

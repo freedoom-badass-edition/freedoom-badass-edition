@@ -169,7 +169,7 @@ Map BADASS13 "$BADASS13"
 	Sky1 = SKY2
 	Music = D_DOOM2
 	Par = 35
-	Author = Saver310
+	Author = CMOS555
 }
 Map BADASS14 "$BADASS14"
 {
@@ -190,6 +190,7 @@ Map BADASS15 "$BADASS15"
 	Music = D_MAP15
 	Par = 30
 	Author = Saver310
+	Sky1 = CEIL4_2
 	ClipMidTextures
 }
 Map BADASS16 "$BADASS16" {
@@ -607,6 +608,7 @@ GameInfo
 }
 DoomEdNums
 {
+	6345 = "Timmy"
 	26016 = "FucketSpawnLocation"
 	26017 = "TheNuker"
 	26018 = "NuclearFucket"
@@ -625,6 +627,6 @@ DoomEdNums
 	26031 = "BadassTrilobite"
 	26032 = "serpentilliondollars"
 	26033 = "FiveHundredBullets"
+	26034 = "DeathsheadFigurine"
 	32420 = "Convicts"
-	6345 = "Timmy"
 }
