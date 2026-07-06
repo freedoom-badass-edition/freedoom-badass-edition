@@ -32,6 +32,7 @@ CLASS SpanishPlayer : BadassPlayer {
 		Player.StartItem "Clip", 50;
 		Player.WeaponSlot 1, "SpanishFist", "SawSaw";
 		Player.WeaponSlot 2, "SpanishPistol";
+		Player.ColorRange 192, 207;
 	}
 	States
 	{
