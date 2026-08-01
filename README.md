@@ -154,9 +154,9 @@ too bad(*ss)
 
 > "why" - CMOS555
 
-> "Oops" - Everyone after a pull request is pushed to the main branch and it breaks everything
-
 > "Shit piss me off so bad map27 might drop in two weeks" - Xiaojun Yue (Dari)
+
+> "Oops" - Everyone after a pull request is pushed to the main branch and it breaks everything
 
 # our benefactors
 
