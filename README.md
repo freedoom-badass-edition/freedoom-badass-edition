@@ -150,11 +150,11 @@ too bad(*ss)
 
 > "i've had my job STOLEN i will be working on badass27 now if i feel like it" - Xiaojun Yue (Dari)
 
+> "Shit piss me off so bad map27 might drop in two weeks" - Xiaojun Yue (Dari) 
+
 > "Evil scary dillar 💀💀💀" - Morris
 
 > "why" - CMOS555
-
-> "Shit piss me off so bad map27 might drop in two weeks" - Xiaojun Yue (Dari)
 
 > "Oops" - Everyone after a pull request is pushed to the main branch and it breaks everything
 
