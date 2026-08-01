@@ -156,6 +156,8 @@ too bad(*ss)
 
 > "Oops" - Everyone after a pull request is pushed to the main branch and it breaks everything
 
+> "Shit piss me off so bad map27 might drop in two weeks" - Xiaojun Yue (Dari)
+
 # our benefactors
 
 these are some other cool projects you should check out if you haven't!
