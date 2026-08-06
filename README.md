@@ -1,14 +1,14 @@
 # <img src="screenshots/logo.png" title="" alt="freedoom bad*ss edition" data-align="center">
 
-the single most bad*ss freedoom mod to ever hit the internet
+the single most bad\*ss freedoom mod to ever hit the internet
 
 features:
 
-* sheer bad*ssery
-* a wide arsenal of bad*ss weapons
-* a bad*ss mappack made just for the mod with over 20 brand new levels
+* sheer bad\*ssery
+* a wide arsenal of bad\*ss weapons
+* a bad\*ss mappack made just for the mod with over 20 brand new levels
 * two new player classes
-* a bad*ss storyline
+* a bad\*ss storyline
 * cocaine
 
 [official discord](https://discord.gg/Rb6DyWyNXV)
@@ -66,7 +66,7 @@ if you need any help or want to find someone willing to play you can check out [
 
 #### is zandronum ever going to be supported?
 
-no, unless they catch up to the 2549 commits and add zscript support. in the meantime you still can play bad*ss deathmatch on your local network using uzdoom or lzdoom (check the question right above this)
+no, unless they catch up to the 2549 commits and add zscript support. in the meantime you still can play bad\*ss deathmatch on your local network using uzdoom or lzdoom (check the question right above this)
 
 #### which iwads does this support?
 
@@ -80,9 +80,9 @@ other iwads like strife, hexen, heretic, etc., are **DEFINITELY** not supported,
 
 what
 
-#### this is too bad*ss for me
+#### this is too bad\*ss for me
 
-too bad(*ss)
+too bad(\*ss)
 
 # sourceport compatibility
 
@@ -128,13 +128,13 @@ too bad(*ss)
 
 > "Also I think I should throw a large brick at someone" - Saver310
 
-> "I was gonna update FD:B*E Until I got high" - Saver310
+> "I was gonna update FD:B\*E Until I got high" - Saver310
 
 > "I'm gonna change myself, how do I kill this" - rostuhan
 
-> "Imagine if Freedoom: Bad*ss Edition had a water gun that broke balls" - rostuhan
+> "Imagine if Freedoom: Bad\*ss Edition had a water gun that broke balls" - rostuhan
 
-> "Bad*ss life support" - rostuhan
+> "Bad\*ss life support" - rostuhan
 
 > "Having a broken GPU with glitched out colours is the intended way to play" - rostuhan
 
@@ -150,7 +150,7 @@ too bad(*ss)
 
 > "i've had my job STOLEN i will be working on badass27 now if i feel like it" - Xiaojun Yue (Dari)
 
-> "Shit piss me off so bad map27 might drop in two weeks" - Xiaojun Yue (Dari) 
+> "Shit piss me off so bad map27 might drop in two weeks" - Xiaojun Yue (Dari)
 
 > "Evil scary dillar 💀💀💀" - Morris
 
@@ -166,7 +166,7 @@ these are some other cool projects you should check out if you haven't!
 
 [Biff Fraggar](https://github.com/SmekkyBoy/Biff-Fraggar) is a cool little standalone libre and foss game on the doom engine, created by some of our contributors
 
-[SLADE](https://slade.mancubus.net/index.php), it's a doom editor and it is truly bad*ss
+[SLADE](https://slade.mancubus.net/index.php), it's a doom editor and it is truly bad\*ss
 
 [UZDoom](https://github.com/UZDoom/UZDoom) is a way better version of unoptimized but powerful spawn of hell, which powers our mod, [that doesn't use ChatGPT](https://github.com/ZDoom/gzdoom/issues/3395)
 
