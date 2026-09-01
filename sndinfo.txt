@@ -1,39 +1,39 @@
 // weapons
-DSCOCKA "sounds/dscocka.wav"
-DSCOCKB "sounds/dscockb.wav"
-DSSGFIRE "sounds/dssgfire.wav"
-DSSSTRT1 "sounds/dssstrt1.wav" 
-DSSSTRT2 "sounds/dssstrt2.wav"
-DSSAWSAW "sounds/dssawsaw.wav"
-Sraka "sounds/dssraka.wav"
-ZUMUPANCHI "sounds/zoompunc.wav"
-ZUMUPANCHIcocaine "sounds/cocapunc.wav"
-HOWCANSHESLAP "sounds/slap.wav"
-weapons/autoshotgun "sounds/shotgun_fire_1 (2).wav"
-weapons/m3 "sounds/xm1014-1.wav"
-weapons/spanishpistol "sounds/weap_miniuzi_slmn_9.wav"
-weapons/m249 "sounds/m249-1.wav"
+DSCOCKA "sounds/weapons/dscocka.wav"
+DSCOCKB "sounds/weapons/dscockb.wav"
+DSSGFIRE "sounds/weapons/dssgfire.wav"
+DSSSTRT1 "sounds/weapons/dssstrt1.wav" 
+DSSSTRT2 "sounds/weapons/dssstrt2.wav"
+DSSAWSAW "sounds/weapons/dssawsaw.wav"
+Sraka "sounds/weapons/dssraka.wav"
+ZUMUPANCHI "sounds/weapons/zoompunc.wav"
+ZUMUPANCHIcocaine "sounds/weapons/cocapunc.wav"
+HOWCANSHESLAP "sounds/weapons/slap.wav"
+weapons/autoshotgun "sounds/weapons/shotgun_fire_1 (2).wav"
+weapons/m3 "sounds/weapons/xm1014-1.wav"
+weapons/spanishpistol "sounds/weapons/weap_miniuzi_slmn_9.wav"
+weapons/m249 "sounds/weapons/m249-1.wav"
 
 $limit weapons/rocklx 0
 $limit weapons/pistol 0
 $random sawfail {DSSSTRT1 DSSSTRT2}
 
 // misc
-sailor/raise "sounds/dsssres.wav"
-bebech "sounds/dsbebech.wav"
-vent/break "sounds/ventbrk.wav"
-door/break "sounds/doorbrk.wav"
-misc/secret "sounds/secret.wav"
-IWANT3BIGMAC "sounds/3bigmac.wav"
-fivehundred "sounds/cigarettes.wav"
-cocaine/pickup "sounds/getcocaine.wav"
-harnas/pickup "sounds/dsharnas.wav"
-karpackie "sounds/karpackie.wav"
-oldgib "sounds/rottking_dsslop.wav"
+sailor/raise "sounds/misc/dsssres.wav"
+bebech "sounds/misc/dsbebech.wav"
+vent/break "sounds/misc/ventbrk.wav"
+door/break "sounds/misc/doorbrk.wav"
+misc/secret "sounds/misc/secret.wav"
+IWANT3BIGMAC "sounds/misc/3bigmac.wav"
+fivehundred "sounds/misc/cigarettes.wav"
+cocaine/pickup "sounds/misc/getcocaine.wav"
+harnas/pickup "sounds/misc/dsharnas.wav"
+karpackie "sounds/misc/karpackie.wav"
+oldgib "sounds/misc/rottking_dsslop.wav"
 gib	dsslop
-pong "sounds/dspong.wav"
-convicts/death "sounds/dsguruxp.wav"
-nuke "sounds/dsnukexp"
+pong "sounds/misc/dspong.wav"
+convicts/death "sounds/misc/dsguruxp.wav"
+nuke "sounds/misc/dsnukexp.wav"
 
 $random menu/quit {Sraka bebech sailor/raise wolfss/sight wolfss/death door/break misc/secret rozjebaneszklo hostage/pain karpackie vent/break IWANT3BIGMAC cocaine/pickup vending/decline}
 $random badass/gibbed {gib gib gib gib gib gib gib gib oldgib oldgib Sraka}
@@ -90,15 +90,15 @@ vending/dispense "sounds/lever6.wav"
 vending/decline "sounds/weapon_cant_buy.wav"
 
 // counter-strike sounds
-counterstrike/hosdown "sounds/hosdown.wav"
-counterstrike/rescued "sounds/rescued.wav"
+counterstrike/hosdown "sounds/cs/hosdown.wav"
+counterstrike/rescued "sounds/cs/rescued.wav"
 
-hostage/pain1 "sounds/hpain1.wav"
-hostage/pain2 "sounds/hpain2.wav"
-hostage/pain3 "sounds/hpain3.wav"
-hostage/pain4 "sounds/hpain4.wav"
-hostage/pain5 "sounds/hpain5.wav"
-hostage/pain6 "sounds/hpain6.wav"
+hostage/pain1 "sounds/cs/hpain1.wav"
+hostage/pain2 "sounds/cs/hpain2.wav"
+hostage/pain3 "sounds/cs/hpain3.wav"
+hostage/pain4 "sounds/cs/hpain4.wav"
+hostage/pain5 "sounds/cs/hpain5.wav"
+hostage/pain6 "sounds/cs/hpain6.wav"
 
 $random hostage/pain {hostage/pain1 hostage/pain2 hostage/pain3 hostage/pain4 hostage/pain5 hostage/pain6}
 
