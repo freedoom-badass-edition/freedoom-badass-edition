@@ -18,9 +18,9 @@ Episode BADE1M3
 {
 	Name = "$BADE1M3"
 }
-Episode BADE2M1
+Episode OKUPLOK
 {
-	Name = "$BADE2M1"
+	Name = "Okuplok"
 }
 Episode CREDITS
 {
@@ -382,17 +382,17 @@ Map ENDLES02 "$ENDLES02"
 	Author = SmekkyBoy
 	NoIntermission
 }
-Map BADE2M1 "$BADE2M1"
-{
-	Sky1 = SKY3
-	Music = D_RUNNIN
-	Author = Shadowrunner
-}
 Map BADE1M3 "$BADE1M3"
 {
 	Sky1 = SKY3
 	Music = D_COCKER
 	Author = Siggi
+}
+Map OKUPLOK "untitled 2"
+{
+	Sky1 = SKY3
+	Music = D_OKUP
+	Author = Okuplok
 }
 Map OFFICE "cs_office"
 {
