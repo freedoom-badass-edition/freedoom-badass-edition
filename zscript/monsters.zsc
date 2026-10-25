@@ -59,7 +59,7 @@ CLASS FucketSpawnLocation : PainElemental { // 26016
 			PAIN J 8 Bright;
 			PAIN K 8 Bright {
 				for (int i; i < 4; i++) {
-					A_SpawnProjectile("FucketGrenadeGravity", 32, 0, 0, 90*i, CMF_AIMDIRECTION);
+					A_SpawnProjectile("FucketGrenadeGravity", 32, 0, 90*i, 0, CMF_AIMDIRECTION);
 				}
 			}
 			PAIN LM 8 Bright;
