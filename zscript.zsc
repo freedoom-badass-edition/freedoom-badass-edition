@@ -218,7 +218,7 @@ class DeathsheadFigurine : Actor
 {
 	Default 
 	{
-		Tag "Ace Deatshead Figurine";
+		Tag "Ace Deathshead Figurine";
 	}
 	States
 	{
