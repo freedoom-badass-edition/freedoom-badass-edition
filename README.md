@@ -156,6 +156,8 @@ too bad(*ss)
 
 > "Oops" - Everyone after a pull request is pushed to the main branch and it breaks everything
 
+> "xd" - leikaisho
+
 # our benefactors
 
 these are some other cool projects you should check out if you haven't!
@@ -173,3 +175,5 @@ these are some other cool projects you should check out if you haven't!
 [Inkscape](https://inkscape.org/) is a solid vector graphics editor, and I've used it to create the CREDITS texture - Saver310
 
 [GIMP](https://www.gimp.org/) is kickass - Saver310
+
+[VSCodium](https://vscodium.com/) is Visual Studio Code with about 50% less microshit, would recommend - leikaisho

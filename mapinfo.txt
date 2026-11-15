@@ -574,7 +574,7 @@ Skill Variety
 	ReplaceActor = "HellKnight", "shittyhitscanass"
 	ReplaceActor = "PainElemental", "FucketSpawnLocation"
 	ReplaceActor = "Spidermastermind", "TechnoSpiderDriver"
-	ReplaceActor = "CorpseTosser", "TheNuker"
+	ReplaceActor = "Cyberdemon", "TheNuker"
 }
 Skill ErectVariety
 {
@@ -592,11 +592,11 @@ Skill ErectVariety
 	ReplaceActor = "ZombieMan", "FiveHundredBullets"
 	ReplaceActor = "ShotgunGuy", "DumbShotgunZombo"
 	ReplaceActor = "ChaingunGuy", "shittyhitscanass_mini"
-	ReplaceActor = "Trilobite", "BadassTrilobite"
+	ReplaceActor = "Cacodemon", "BadassTrilobite"
 	ReplaceActor = "HellKnight", "shittyhitscanass"
 	ReplaceActor = "PainElemental", "FucketSpawnLocation"
 	ReplaceActor = "Spidermastermind", "TechnoSpiderDriver"
-	ReplaceActor = "CorpseTosser", "TheNuker"
+	ReplaceActor = "Cyberdemon", "TheNuker"
 }
 GameInfo
 {
