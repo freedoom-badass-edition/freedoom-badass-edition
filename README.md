@@ -130,14 +130,6 @@ too bad(\*ss)
 
 > "I was gonna update FD:B\*E Until I got high" - Saver310
 
-> "I'm gonna change myself, how do I kill this" - rostuhan
-
-> "Imagine if Freedoom: Bad\*ss Edition had a water gun that broke balls" - rostuhan
-
-> "Bad\*ss life support" - rostuhan
-
-> "Having a broken GPU with glitched out colours is the intended way to play" - rostuhan
-
 > "WHITOID SPOTTED" - SmekkyBoy
 
 > "get this NERD out of my sight.... doesnt know who David William is..." - SmekkyBoy
