@@ -26,32 +26,42 @@ CLASS DumbassShitFuckDickCockShotgun : Shotgun replaces Shotgun {
 			SHTS A 0
 			{
 			    A_Quake(1,4,0,100);
-			    A_FireBullets(100, 100, 1000, random(1,5), "BulletPuff", FBF_USEAMMO|FBF_NORANDOM);
+				A_FireBullets(100, 100, 50, random(3,4), "BulletPuff", FBF_USEAMMO|FBF_NORANDOM);
+			    for(int i=0;i<19;i++){
+					A_FireBullets(100, 100, 50, random(3,4), "BulletPuff", FBF_NORANDOM);
+				}
 			    A_StartSound("weapons/sshotf", CHAN_WEAPON);
 			    A_GunFlash();
 			    A_Recoil(80);
 			}
 			SHTS A 1 A_SetPitch(pitch-5);
-			SHTS AAAB 1 A_SetPitch(pitch+1);
+			SHTS AAAB 1; //A_SetPitch(pitch+1);
 			SHTS B 0
 			{
 			    A_Quake(1,4,0,100);
-			    A_FireBullets(50, 50, 500, 2, "BulletPuff", FBF_USEAMMO|FBF_NORANDOM);
+				A_FireBullets(50, 50, 50, random(3,4), "BulletPuff", FBF_USEAMMO|FBF_NORANDOM);
+			    for(int i=0;i<9;i++){
+					A_FireBullets(50, 50, 50, random(3,4), "BulletPuff", FBF_NORANDOM);
+				}
 			    A_StartSound("weapons/sshotf", CHAN_WEAPON);
 			    A_GunFlash();
 			    A_Recoil(40);
 			}
 			SHTS B 1 A_SetPitch(pitch-5);
-			SHTS BBCC 1 A_SetPitch(pitch+1);
+			SHTS BBCC 1; //A_SetPitch(pitch+1);
 			SHTS C 0
 			{
-			    A_FireBullets(10, 10, 100, 2, "BulletPuff", FBF_USEAMMO|FBF_NORANDOM);
+				A_FireBullets(10, 10, 10, random(4,5), "BulletPuff", FBF_USEAMMO|FBF_NORANDOM);
+			    for(int i=0;i<9;i++){
+					A_FireBullets(10, 10, 10, random(4,5), "BulletPuff", FBF_NORANDOM);
+				}
 			    A_StartSound("weapons/sshotf", CHAN_WEAPON);
 			    A_GunFlash();
 			}
 			SHTS C 4;
 			SHTS ABCABCABC 4;
-			SHTG B 3 A_StartSound("DSCOCKA", CHAN_WEAPON);
+			SHTG B 2;
+			SHTG B 1 A_StartSound("DSCOCKA", CHAN_WEAPON);
 			SHTG C 3;
 			SHTG D 3 A_StartSound("DSCOCKB", CHAN_WEAPON);
 			SHTG CB 3;
@@ -61,32 +71,42 @@ CLASS DumbassShitFuckDickCockShotgun : Shotgun replaces Shotgun {
 			SHTS A 0
 			{
 			    A_Quake(1,4,0,100);
-			    A_FireBullets(100, 100, 1000, random(1,2), "BulletPuff", FBF_USEAMMO|FBF_NORANDOM);
+				A_FireBullets(100, 100, 50, random(4,5), "BulletPuff", FBF_USEAMMO|FBF_NORANDOM);
+			    for(int i=0;i<19;i++){
+					A_FireBullets(100, 100, 50, random(4,5), "BulletPuff", FBF_NORANDOM);
+				}
 			    A_StartSound("weapons/sshotf", CHAN_WEAPON);
 			    A_GunFlash();
 			    A_Recoil(80);
 			}
 			SHTS A 1 A_SetPitch(pitch-5);
-			SHTS AAAB 1 A_SetPitch(pitch+1);
+			SHTS AAAB 1; //A_SetPitch(pitch+1);
 			SHTS B 0
 			{
 			    A_Quake(1,4,0,100);
-			    A_FireBullets(50, 50, 500, 1, "BulletPuff", FBF_USEAMMO|FBF_NORANDOM);
+				A_FireBullets(50, 50, 50, random(4,5), "BulletPuff", FBF_USEAMMO|FBF_NORANDOM);
+			    for(int i=0;i<9;i++){
+					A_FireBullets(50, 50, 50, random(4,5), "BulletPuff", FBF_NORANDOM);
+				}
 			    A_StartSound("weapons/sshotf", CHAN_WEAPON);
 			    A_GunFlash();
 			    A_Recoil(40);
 			}
 			SHTS B 1 A_SetPitch(pitch-5);
-			SHTS BBCC 1 A_SetPitch(pitch+1);
+			SHTS BBCC 1; //A_SetPitch(pitch+1);
 			SHTS C 0
 			{
-			    A_FireBullets(10, 10, 100, 1, "BulletPuff", FBF_USEAMMO|FBF_NORANDOM);
+				A_FireBullets(10, 10, 10, random(5,6), "BulletPuff", FBF_USEAMMO|FBF_NORANDOM);
+			    for(int i=0;i<9;i++){
+					A_FireBullets(10, 10, 10, random(5,6), "BulletPuff", FBF_NORANDOM);
+				}
 			    A_StartSound("weapons/sshotf", CHAN_WEAPON);
 			    A_GunFlash();
 			}
 			SHTS C 2;
 			SHTS A 5;
-			SHTG B 2 A_StartSound("DSCOCKA", CHAN_WEAPON);
+			SHTG B 1;
+			SHTG B 1 A_StartSound("DSCOCKA", CHAN_WEAPON);
 			SHTG C 2;
 			SHTG D 2 A_StartSound("DSCOCKB", CHAN_WEAPON);
 			SHTG CB 2;
@@ -350,155 +370,151 @@ CLASS DuperShotgun : SuperShotgun replaces SuperShotgun {
 			Loop;
 		Fire:
 			SHT2 A 0 A_JumpIfInventory("CocainePower", 1, "FireCocaine");
-			SHT2 A 3;
 			SHT2 A 0
 			{
 			    A_Quake(6,12,0,800);
-			    A_FireBullets (12, 7, 40, 75, "BulletPuff", FBF_USEAMMO|FBF_NORANDOM);
+			    A_FireBullets (12, 7, 48, 75, "BulletPuff", FBF_USEAMMO|FBF_NORANDOM);
 			    A_StartSound ("weapons/sshotf", CHAN_WEAPON);
 			    A_GunFlash();
 			    A_Recoil(160);
 			}
 			SHT2 A 1 A_SetPitch(pitch-40);
-			SHT2 AAAAAA 1 A_SetPitch(pitch+6);
-			SHT2 B 7;
-			SHT2 C 7 A_CheckReload;
-			SHT2 D 4 A_OpenShotgun2;
-			SHT2 E 4;
-			SHT2 F 4 A_LoadShotgun2;
-			SHT2 DE 4;
-			SHT2 F 4 A_LoadShotgun2;
-			SHT2 DE 4;
+			SHT2 AAAAAA 1; //A_SetPitch(pitch+6);
+			SHT2 B 3;
+			SHT2 C 3 A_CheckReload;
+			SHT2 D 3 A_OpenShotgun2;
+			SHT2 E 3;
 			SHT2 F 4 A_LoadShotgun2;
 			SHT2 DE 3;
-			SHT2 F 3 A_LoadShotgun2;
+			SHT2 F 4 A_LoadShotgun2;
 			SHT2 DE 3;
-			SHT2 F 3 A_LoadShotgun2;
+			SHT2 F 4 A_LoadShotgun2;
 			SHT2 DE 3;
-			SHT2 F 3 A_LoadShotgun2;
-			SHT2 G 6;
-			SHT2 H 6 A_CloseShotgun2;
+			SHT2 F 4 A_LoadShotgun2;
+			SHT2 DE 3;
+			SHT2 F 4 A_LoadShotgun2;
+			SHT2 DE 3;
+			SHT2 F 4 A_LoadShotgun2;
+			SHT2 G 5;
+			SHT2 H 5 A_CloseShotgun2;
 			SHT2 A 5 A_ReFire;
 			Goto Ready;
 		FireCocaine:
-			SHT2 A 2;
 			SHT2 A 0
 			{
 			    A_Quake(6,12,0,800);
-			    A_FireBullets (12, 7, 80, 150, "BulletPuff", FBF_USEAMMO|FBF_NORANDOM);
+			    A_FireBullets (12, 7, 96, 150, "BulletPuff", FBF_USEAMMO|FBF_NORANDOM);
 			    A_StartSound ("weapons/sshotf", CHAN_WEAPON);
 			    A_GunFlash();
 			    A_Recoil(160);
 			}
 			SHT2 A 1 A_SetPitch(pitch-40);
-			SHT2 AAAAAA 1 A_SetPitch(pitch+6);
+			SHT2 AAAAAA 1; //A_SetPitch(pitch+6);
 			SHT2 B 2;
 			SHT2 C 2 A_CheckReload;
-			SHT2 D 2 A_OpenShotgun2;
-			SHT2 E 2;
+			SHT2 D 1 A_OpenShotgun2;
+			SHT2 E 1;
 			SHT2 F 2 A_LoadShotgun2;
-			SHT2 DE 2;
-			SHT2 F 1 A_LoadShotgun2;
 			SHT2 DE 1;
-			SHT2 F 1 A_LoadShotgun2;
+			SHT2 F 2 A_LoadShotgun2;
 			SHT2 DE 1;
-			SHT2 F 1 A_LoadShotgun2;
+			SHT2 F 2 A_LoadShotgun2;
 			SHT2 DE 1;
-			SHT2 F 1 A_LoadShotgun2;
+			SHT2 F 2 A_LoadShotgun2;
 			SHT2 DE 1;
-			SHT2 F 1 A_LoadShotgun2;
-			SHT2 G 1;
-			SHT2 H 2 A_CloseShotgun2;
+			SHT2 F 2 A_LoadShotgun2;
+			SHT2 DE 1;
+			SHT2 F 2 A_LoadShotgun2;
+			SHT2 G 3;
+			SHT2 H 3 A_CloseShotgun2;
 			SHT2 A 3 A_ReFire;
 			Goto Ready;
 		AltFire:
 			SHT2 A 0 A_JumpIfInventory("CocainePower", 1, "AltFireCocaine");
-			SHT2 A 3;
-			SHD2 EDCBA 3;
+			SHD2 EDCB 2;
 			SHD2 F 0
 			{
 			    A_Quake(8,12,0,1000);
-			    A_FireBullets (32, 24, 80, 75, "BulletPuff", FBF_USEAMMO|FBF_NORANDOM);
+			    A_FireBullets (32, 24, 112, 75, "BulletPuff", FBF_USEAMMO|FBF_NORANDOM);
 			    A_StartSound ("weapons/sshotf", CHAN_WEAPON);
 			    A_GunFlash();
 			    A_Recoil(320);
 			}
 			SHD2 A 1 A_SetPitch(pitch-60);
-			SHD2 AAFFFAAAAA 1 A_SetPitch(pitch+6);
-			SHD2 A 7;
-			SHD2 ABCDE 2;
-			SHT2 AB 2;
-			SHT2 C 7 A_CheckReload;
-			SHT2 D 4 A_OpenShotgun2;
-			SHT2 E 4;
-			SHT2 F 4 A_LoadShotgun2;
-			SHT2 DE 4;
-			SHT2 F 4 A_LoadShotgun2;
-			SHT2 DE 4;
+			SHD2 AAFFFAAAAA 1; //A_SetPitch(pitch+6);
+			SHD2 ABCD 2;
+			SHT2 C 4 A_CheckReload;
+			SHT2 D 3 A_OpenShotgun2;
+			SHT2 E 3;
 			SHT2 F 4 A_LoadShotgun2;
 			SHT2 DE 3;
-			SHT2 F 3 A_LoadShotgun2;
+			SHT2 F 4 A_LoadShotgun2;
 			SHT2 DE 3;
-			SHT2 F 3 A_LoadShotgun2;
+			SHT2 F 4 A_LoadShotgun2;
 			SHT2 DE 3;
-			SHT2 F 3 A_LoadShotgun2;
-			SHT2 DE 2;
-			SHT2 F 2 A_LoadShotgun2;
-			SHT2 DE 2;
-			SHT2 F 2 A_LoadShotgun2;
-			SHT2 DE 2;
-			SHT2 F 2 A_LoadShotgun2;
-			SHT2 DE 2;
-			SHT2 F 2 A_LoadShotgun2;
-			SHT2 DE 1;
-			SHT2 F 1 A_LoadShotgun2;
-			SHT2 G 6;
-			SHT2 H 6 A_CloseShotgun2;
+			SHT2 F 4 A_LoadShotgun2;
+			SHT2 DE 3;
+			SHT2 F 4 A_LoadShotgun2;
+			SHT2 DE 3;
+			SHT2 F 4 A_LoadShotgun2;
+			SHT2 DE 3;
+			SHT2 F 4 A_LoadShotgun2;
+			SHT2 DE 3;
+			SHT2 F 4 A_LoadShotgun2;
+			SHT2 DE 3;
+			SHT2 F 4 A_LoadShotgun2;
+			SHT2 DE 3;
+			SHT2 F 4 A_LoadShotgun2;
+			SHT2 DE 3;
+			SHT2 F 4 A_LoadShotgun2;
+			SHT2 DE 3;
+			SHT2 F 4 A_LoadShotgun2;
+			SHT2 G 5;
+			SHT2 H 5 A_CloseShotgun2;
 			SHT2 A 5 A_ReFire;
 			Goto Ready;
 		AltFireCocaine:
-			SHT2 A 1;
-			SHD2 EDCBA 1;
+			SHD2 EDCB 1;
 			SHD2 F 0
 			{
 			    A_Quake(8,12,0,1000);
-			    A_FireBullets (32, 24, 160, 300, "BulletPuff");
+			    A_FireBullets (32, 24, 224, 150, "BulletPuff");
 			    A_StartSound ("weapons/sshotf", CHAN_WEAPON);
 			    A_GunFlash();
 			    A_Recoil(320);
 			}
 			SHD2 A 1 A_SetPitch(pitch-60);
-			SHD2 AFAA 1 A_SetPitch(pitch+12);
-			SHD2 A 1;
-			SHD2 ABCDE 2;
-			SHT2 AB 2;
-			SHT2 C 1 A_CheckReload;
+			SHD2 AFAA 1; //A_SetPitch(pitch+12);
+			SHD2 ABCD 1;
+			SHT2 C 2 A_CheckReload;
 			SHT2 D 1 A_OpenShotgun2;
 			SHT2 E 1;
-			SHT2 F 1 A_LoadShotgun2;
+			SHT2 F 2 A_LoadShotgun2;
 			SHT2 DE 1;
-			SHT2 F 1 A_LoadShotgun2;
+			SHT2 F 2 A_LoadShotgun2;
 			SHT2 DE 1;
-			SHT2 F 1 A_LoadShotgun2;
+			SHT2 F 2 A_LoadShotgun2;
 			SHT2 DE 1;
-			SHT2 F 1 A_LoadShotgun2;
+			SHT2 F 2 A_LoadShotgun2;
 			SHT2 DE 1;
-			SHT2 F 1 A_LoadShotgun2;
+			SHT2 F 2 A_LoadShotgun2;
 			SHT2 DE 1;
-			SHT2 F 1 A_LoadShotgun2;
+			SHT2 F 2 A_LoadShotgun2;
 			SHT2 DE 1;
-			SHT2 F 1 A_LoadShotgun2;
+			SHT2 F 2 A_LoadShotgun2;
 			SHT2 DE 1;
-			SHT2 F 1 A_LoadShotgun2;
+			SHT2 F 2 A_LoadShotgun2;
 			SHT2 DE 1;
-			SHT2 F 1 A_LoadShotgun2;
+			SHT2 F 2 A_LoadShotgun2;
 			SHT2 DE 1;
-			SHT2 F 1 A_LoadShotgun2;
+			SHT2 F 2 A_LoadShotgun2;
 			SHT2 DE 1;
-			SHT2 F 1 A_LoadShotgun2;
-			SHT2 G 1;
-			SHT2 H 2 A_CloseShotgun2;
-			SHT2 A 3 A_ReFire;
+			SHT2 F 2 A_LoadShotgun2;
+			SHT2 DE 1;
+			SHT2 F 2 A_LoadShotgun2;
+			SHT2 G 3;
+			SHT2 H 3 A_CloseShotgun2;
+			SHT2 A 2 A_ReFire;
 			Goto Ready;
 		Flash:
 			SHT2 I 4 Bright A_Light1;
